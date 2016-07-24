@@ -10,9 +10,12 @@ namespace AlbionEconDesktop
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static List<Item> items = new List<Item>();
         public MainWindow()
         {
             InitializeComponent();
+            var json = new JsonHandler();
+            json.DeserializeRecipes();
         }
     }
 }

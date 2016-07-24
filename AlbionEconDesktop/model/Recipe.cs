@@ -7,11 +7,24 @@ namespace AlbionEconDesktop.model
     {
         public class Component
         {
-            Item Item;
-            int Count;
+            public Item Item;
+            public int Count;
         }
+        
+        public Item CreatedItem;
 
-        Item CreatedItem;
-        List<Component> Components = new List<Component>();
+        [JsonProperty("Components")]
+        List<Component> Components;
+
+        public override string ToString()
+        {
+            var str = "(";
+            foreach (Component c in Components)
+            {
+                str += c.Count + "x" + c.Item;
+            }
+            str += ")";
+            return str;
+        }
     }
 }
