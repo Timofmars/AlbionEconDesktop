@@ -1,0 +1,7461 @@
+[
+  {
+    "$id": "1",
+    "Name": "Copper Ore",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "2",
+    "Name": "Copper Bar",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "2"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "1"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "3",
+    "Name": "Novice's Soldier Boots",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "3"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "4",
+    "Name": "Tin Ore",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "5",
+    "Name": "Bronze Bar",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "5"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "4"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "6",
+    "Name": "Journeyman's Soldier Boots",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "6"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "7",
+    "Name": "Iron Ore",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "8",
+    "Name": "Steel Bar",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "8"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "7"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "9",
+    "Name": "Adept's Soldier Boots",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "9"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "10",
+    "Name": "Uncommon Iron Ore",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "11",
+    "Name": "Uncommon Steel Bar",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "11"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "10"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "12",
+    "Name": "Adept's Soldier Boots",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "12"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "13",
+    "Name": "Rare Iron Ore",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "14",
+    "Name": "Rare Steel Bar",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "14"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "13"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "15",
+    "Name": "Adept's Soldier Boots",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "15"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "16",
+    "Name": "Exceptional Iron Ore",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "17",
+    "Name": "Exceptional Steel Bar",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "17"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "16"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "18",
+    "Name": "Adept's Soldier Boots",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "18"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "19",
+    "Name": "Titanium Ore",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "20",
+    "Name": "Titanium Bar",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "20"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "19"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "21",
+    "Name": "Expert's Soldier Boots",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "21"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "22",
+    "Name": "Uncommon Titanium Ore",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "23",
+    "Name": "Uncommon Titanium Bar",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "23"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "22"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "24",
+    "Name": "Expert's Soldier Boots",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "24"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "25",
+    "Name": "Rare Titanium Ore",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "26",
+    "Name": "Rare Titanium Bar",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "26"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "25"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "27",
+    "Name": "Expert's Soldier Boots",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "27"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "28",
+    "Name": "Exceptional Titanium Ore",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "29",
+    "Name": "Exceptional Titanium Bar",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "29"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "28"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "30",
+    "Name": "Expert's Soldier Boots",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "30"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "31",
+    "Name": "Runite Ore",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "32",
+    "Name": "Runite Steel Bar",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "32"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "31"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "33",
+    "Name": "Master's Soldier Boots",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "33"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "34",
+    "Name": "Uncommon Runite Ore",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "35",
+    "Name": "Uncommon Runite Steel Bar",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "35"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "34"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "36",
+    "Name": "Master's Soldier Boots",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "36"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "37",
+    "Name": "Rare Runite Ore",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "38",
+    "Name": "Rare Runite Steel Bar",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "38"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "37"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "39",
+    "Name": "Master's Soldier Boots",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "39"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "40",
+    "Name": "Exceptional Runite Ore",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "41",
+    "Name": "Exceptional Runite Steel Bar",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "41"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "40"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "42",
+    "Name": "Master's Soldier Boots",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "42"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "43",
+    "Name": "Meteorite Ore",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "44",
+    "Name": "Meteorite Steel Bar",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "44"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "43"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "45",
+    "Name": "Grandmaster's Soldier Boots",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "45"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "46",
+    "Name": "Uncommon Meteorite Ore",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "47",
+    "Name": "Uncommon Meteorite Steel Bar",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "47"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "46"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "48",
+    "Name": "Grandmaster's Soldier Boots",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "48"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "49",
+    "Name": "Rare Meteorite Ore",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "50",
+    "Name": "Rare Meteorite Steel Bar",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "50"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "49"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "51",
+    "Name": "Grandmaster's Soldier Boots",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "51"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "52",
+    "Name": "Exceptional Meteorite Ore",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "53",
+    "Name": "Exceptional Meteorite Steel Bar",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "53"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "52"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "54",
+    "Name": "Grandmaster's Soldier Boots",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "54"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "55",
+    "Name": "Adamantium Ore",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "56",
+    "Name": "Adamantium Steel Bar",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "56"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "55"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "57",
+    "Name": "Elder's Soldier Boots",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "57"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "58",
+    "Name": "Uncommon Adamantium Ore",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "59",
+    "Name": "Uncommon Adamantium Steel Bar",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "59"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "58"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "60",
+    "Name": "Elder's Soldier Boots",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "60"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "59"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "61",
+    "Name": "Rare Adamantium Ore",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "62",
+    "Name": "Rare Adamantium Steel Bar",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "62"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "61"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "63",
+    "Name": "Elder's Soldier Boots",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "63"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "62"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "64",
+    "Name": "Exceptional Adamantium Ore",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "65",
+    "Name": "Exceptional Adamantium Steel Bar",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "65"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "64"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "66",
+    "Name": "Elder's Soldier Boots",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "66"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "65"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "67",
+    "Name": "Adept's Knight Boots",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "67"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "68",
+    "Name": "Adept's Knight Boots",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "68"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "69",
+    "Name": "Adept's Knight Boots",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "69"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "70",
+    "Name": "Adept's Knight Boots",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "70"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "71",
+    "Name": "Expert's Knight Boots",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "71"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "72",
+    "Name": "Expert's Knight Boots",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "72"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "73",
+    "Name": "Expert's Knight Boots",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "73"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "74",
+    "Name": "Expert's Knight Boots",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "74"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "75",
+    "Name": "Master's Knight Boots",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "75"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "76",
+    "Name": "Master's Knight Boots",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "76"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "77",
+    "Name": "Master's Knight Boots",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "77"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "78",
+    "Name": "Master's Knight Boots",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "78"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "79",
+    "Name": "Grandmaster's Knight Boots",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "79"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "80",
+    "Name": "Grandmaster's Knight Boots",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "80"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "81",
+    "Name": "Grandmaster's Knight Boots",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "81"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "82",
+    "Name": "Grandmaster's Knight Boots",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "82"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "83",
+    "Name": "Elder's Knight Boots",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "83"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "84",
+    "Name": "Elder's Knight Boots",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "84"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "59"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "85",
+    "Name": "Elder's Knight Boots",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "85"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "62"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "86",
+    "Name": "Elder's Knight Boots",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "86"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "65"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "87",
+    "Name": "Adept's Guardian Boots",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "87"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "88",
+    "Name": "Adept's Guardian Boots",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "88"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "89",
+    "Name": "Adept's Guardian Boots",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "89"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "90",
+    "Name": "Adept's Guardian Boots",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "90"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "91",
+    "Name": "Expert's Guardian Boots",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "91"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "92",
+    "Name": "Expert's Guardian Boots",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "92"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "93",
+    "Name": "Expert's Guardian Boots",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "93"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "94",
+    "Name": "Expert's Guardian Boots",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "94"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "95",
+    "Name": "Master's Guardian Boots",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "95"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "96",
+    "Name": "Master's Guardian Boots",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "96"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "97",
+    "Name": "Master's Guardian Boots",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "97"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "98",
+    "Name": "Master's Guardian Boots",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "98"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "99",
+    "Name": "Grandmaster's Guardian Boots",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "99"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "100",
+    "Name": "Grandmaster's Guardian Boots",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "100"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "101",
+    "Name": "Grandmaster's Guardian Boots",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "101"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "102",
+    "Name": "Grandmaster's Guardian Boots",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "102"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "103",
+    "Name": "Elder's Guardian Boots",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "103"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "104",
+    "Name": "Elder's Guardian Boots",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "104"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "59"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "105",
+    "Name": "Elder's Guardian Boots",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "105"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "62"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "106",
+    "Name": "Elder's Guardian Boots",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "106"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "65"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "107",
+    "Name": "Novice's Soldier Armor",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "107"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "108",
+    "Name": "Journeyman's Soldier Armor",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "108"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "109",
+    "Name": "Adept's Soldier Armor",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "109"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "110",
+    "Name": "Adept's Soldier Armor",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "110"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "111",
+    "Name": "Adept's Soldier Armor",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "111"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "112",
+    "Name": "Adept's Soldier Armor",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "112"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "113",
+    "Name": "Expert's Soldier Armor",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "113"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "114",
+    "Name": "Expert's Soldier Armor",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "114"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "115",
+    "Name": "Expert's Soldier Armor",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "115"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "116",
+    "Name": "Expert's Soldier Armor",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "116"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "117",
+    "Name": "Master's Soldier Armor",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "117"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "118",
+    "Name": "Master's Soldier Armor",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "118"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "119",
+    "Name": "Master's Soldier Armor",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "119"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "120",
+    "Name": "Master's Soldier Armor",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "120"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "121",
+    "Name": "Grandmaster's Soldier Armor",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "121"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "122",
+    "Name": "Grandmaster's Soldier Armor",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "122"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "123",
+    "Name": "Grandmaster's Soldier Armor",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "123"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "124",
+    "Name": "Grandmaster's Soldier Armor",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "124"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "125",
+    "Name": "Elder's Soldier Armor",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "125"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "126",
+    "Name": "Elder's Soldier Armor",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "126"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "59"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "127",
+    "Name": "Elder's Soldier Armor",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "127"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "62"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "128",
+    "Name": "Elder's Soldier Armor",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "128"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "65"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "129",
+    "Name": "Adept's Knight Armor",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "129"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "130",
+    "Name": "Adept's Knight Armor",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "130"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "131",
+    "Name": "Adept's Knight Armor",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "131"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "132",
+    "Name": "Adept's Knight Armor",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "132"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "133",
+    "Name": "Expert's Knight Armor",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "133"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "134",
+    "Name": "Expert's Knight Armor",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "134"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "135",
+    "Name": "Expert's Knight Armor",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "135"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "136",
+    "Name": "Expert's Knight Armor",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "136"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "137",
+    "Name": "Master's Knight Armor",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "137"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "138",
+    "Name": "Master's Knight Armor",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "138"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "139",
+    "Name": "Master's Knight Armor",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "139"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "140",
+    "Name": "Master's Knight Armor",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "140"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "141",
+    "Name": "Grandmaster's Knight Armor",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "141"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "142",
+    "Name": "Grandmaster's Knight Armor",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "142"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "143",
+    "Name": "Grandmaster's Knight Armor",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "143"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "144",
+    "Name": "Grandmaster's Knight Armor",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "144"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "145",
+    "Name": "Elder's Knight Armor",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "145"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "146",
+    "Name": "Elder's Knight Armor",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "146"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "59"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "147",
+    "Name": "Elder's Knight Armor",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "147"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "62"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "148",
+    "Name": "Elder's Knight Armor",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "148"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "65"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "149",
+    "Name": "Adept's Guardian Armor",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "149"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "150",
+    "Name": "Adept's Guardian Armor",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "150"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "151",
+    "Name": "Adept's Guardian Armor",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "151"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "152",
+    "Name": "Adept's Guardian Armor",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "152"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "153",
+    "Name": "Expert's Guardian Armor",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "153"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "154",
+    "Name": "Expert's Guardian Armor",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "154"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "155",
+    "Name": "Expert's Guardian Armor",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "155"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "156",
+    "Name": "Expert's Guardian Armor",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "156"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "157",
+    "Name": "Master's Guardian Armor",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "157"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "158",
+    "Name": "Master's Guardian Armor",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "158"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "159",
+    "Name": "Master's Guardian Armor",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "159"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "160",
+    "Name": "Master's Guardian Armor",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "160"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "161",
+    "Name": "Grandmaster's Guardian Armor",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "161"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "162",
+    "Name": "Grandmaster's Guardian Armor",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "162"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "163",
+    "Name": "Grandmaster's Guardian Armor",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "163"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "164",
+    "Name": "Grandmaster's Guardian Armor",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "164"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "165",
+    "Name": "Elder's Guardian Armor",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "165"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "166",
+    "Name": "Elder's Guardian Armor",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "166"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "59"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "167",
+    "Name": "Elder's Guardian Armor",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "167"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "62"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "168",
+    "Name": "Elder's Guardian Armor",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "168"
+      },
+      "Components": [
+        {
+          "Count": 16,
+          "Item": {
+            "$ref": "65"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "169",
+    "Name": "Novice's Soldier Helmet",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "169"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "170",
+    "Name": "Journeyman's Soldier Helmet",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "170"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "171",
+    "Name": "Adept's Soldier Helmet",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "171"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "172",
+    "Name": "Adept's Soldier Helmet",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "172"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "173",
+    "Name": "Adept's Soldier Helmet",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "173"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "174",
+    "Name": "Adept's Soldier Helmet",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "174"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "175",
+    "Name": "Expert's Soldier Helmet",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "175"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "176",
+    "Name": "Expert's Soldier Helmet",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "176"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "177",
+    "Name": "Expert's Soldier Helmet",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "177"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "178",
+    "Name": "Expert's Soldier Helmet",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "178"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "179",
+    "Name": "Master's Soldier Helmet",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "179"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "180",
+    "Name": "Master's Soldier Helmet",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "180"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "181",
+    "Name": "Master's Soldier Helmet",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "181"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "182",
+    "Name": "Master's Soldier Helmet",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "182"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "183",
+    "Name": "Grandmaster's Soldier Helmet",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "183"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "184",
+    "Name": "Grandmaster's Soldier Helmet",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "184"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "185",
+    "Name": "Grandmaster's Soldier Helmet",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "185"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "186",
+    "Name": "Grandmaster's Soldier Helmet",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "186"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "187",
+    "Name": "Elder's Soldier Helmet",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "187"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "188",
+    "Name": "Elder's Soldier Helmet",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "188"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "59"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "189",
+    "Name": "Elder's Soldier Helmet",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "189"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "62"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "190",
+    "Name": "Elder's Soldier Helmet",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "190"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "65"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "191",
+    "Name": "Adept's Knight Helmet",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "191"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "192",
+    "Name": "Adept's Knight Helmet",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "192"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "193",
+    "Name": "Adept's Knight Helmet",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "193"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "194",
+    "Name": "Adept's Knight Helmet",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "194"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "195",
+    "Name": "Expert's Knight Helmet",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "195"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "196",
+    "Name": "Expert's Knight Helmet",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "196"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "197",
+    "Name": "Expert's Knight Helmet",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "197"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "198",
+    "Name": "Expert's Knight Helmet",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "198"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "199",
+    "Name": "Master's Knight Helmet",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "199"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "200",
+    "Name": "Master's Knight Helmet",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "200"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "201",
+    "Name": "Master's Knight Helmet",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "201"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "202",
+    "Name": "Master's Knight Helmet",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "202"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "203",
+    "Name": "Grandmaster's Knight Helmet",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "203"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "204",
+    "Name": "Grandmaster's Knight Helmet",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "204"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "205",
+    "Name": "Grandmaster's Knight Helmet",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "205"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "206",
+    "Name": "Grandmaster's Knight Helmet",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "206"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "207",
+    "Name": "Elder's Knight Helmet",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "207"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "208",
+    "Name": "Elder's Knight Helmet",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "208"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "59"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "209",
+    "Name": "Elder's Knight Helmet",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "209"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "62"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "210",
+    "Name": "Elder's Knight Helmet",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "210"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "65"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "211",
+    "Name": "Adept's Guardian Helmet",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "211"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "212",
+    "Name": "Adept's Guardian Helmet",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "212"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "11"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "213",
+    "Name": "Adept's Guardian Helmet",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "213"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "14"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "214",
+    "Name": "Adept's Guardian Helmet",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "214"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "17"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "215",
+    "Name": "Expert's Guardian Helmet",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "215"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "216",
+    "Name": "Expert's Guardian Helmet",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "216"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "23"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "217",
+    "Name": "Expert's Guardian Helmet",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "217"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "26"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "218",
+    "Name": "Expert's Guardian Helmet",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "218"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "29"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "219",
+    "Name": "Master's Guardian Helmet",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "219"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "220",
+    "Name": "Master's Guardian Helmet",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "220"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "35"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "221",
+    "Name": "Master's Guardian Helmet",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "221"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "38"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "222",
+    "Name": "Master's Guardian Helmet",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "222"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "41"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "223",
+    "Name": "Grandmaster's Guardian Helmet",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "223"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "224",
+    "Name": "Grandmaster's Guardian Helmet",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "224"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "47"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "225",
+    "Name": "Grandmaster's Guardian Helmet",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "225"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "50"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "226",
+    "Name": "Grandmaster's Guardian Helmet",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "226"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "53"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "227",
+    "Name": "Elder's Guardian Helmet",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "227"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "228",
+    "Name": "Elder's Guardian Helmet",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "228"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "59"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "229",
+    "Name": "Elder's Guardian Helmet",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "229"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "62"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "230",
+    "Name": "Elder's Guardian Helmet",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "230"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "65"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "231",
+    "Name": "Medium Hide",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "232",
+    "Name": "Thin Hide",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "233",
+    "Name": "Rugged Hide",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "234",
+    "Name": "Stiff Leather",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "234"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "233"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "235",
+    "Name": "Thick Leather",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "235"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "232"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "234"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "236",
+    "Name": "Worked Leather",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "236"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "231"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "235"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "237",
+    "Name": "Adept's Claymore",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "237"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "8"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "236"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "238",
+    "Name": "Uncommon Medium Hide",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "239",
+    "Name": "Uncommon Worked Leather",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "239"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "238"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "235"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "240",
+    "Name": "Adept's Claymore",
+    "Tier": 4,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "240"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "11"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "239"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "241",
+    "Name": "Rare Medium Hide",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "242",
+    "Name": "Rare Worked Leather",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "242"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "241"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "235"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "243",
+    "Name": "Adept's Claymore",
+    "Tier": 4,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "243"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "14"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "242"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "244",
+    "Name": "Exceptional Medium Hide",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "245",
+    "Name": "Exceptional Worked Leather",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "245"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "244"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "235"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "246",
+    "Name": "Adept's Claymore",
+    "Tier": 4,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "246"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "17"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "245"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "247",
+    "Name": "Heavy Hide",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "248",
+    "Name": "Cured Leather",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "248"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "247"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "236"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "249",
+    "Name": "Expert's Claymore",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "249"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "20"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "248"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "250",
+    "Name": "Uncommon Heavy Hide",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "251",
+    "Name": "Uncommon Cured Leather",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "251"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "250"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "239"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "252",
+    "Name": "Expert's Claymore",
+    "Tier": 5,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "252"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "23"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "251"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "253",
+    "Name": "Rare Heavy Hide",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "254",
+    "Name": "Rare Cured Leather",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "254"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "253"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "242"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "255",
+    "Name": "Expert's Claymore",
+    "Tier": 5,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "255"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "26"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "254"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "256",
+    "Name": "Exceptional Heavy Hide",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "257",
+    "Name": "Exceptional Cured Leather",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "257"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "256"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "245"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "258",
+    "Name": "Expert's Claymore",
+    "Tier": 5,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "258"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "29"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "257"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "259",
+    "Name": "Robust Hide",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "260",
+    "Name": "Hardened Leather",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "260"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "259"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "248"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "261",
+    "Name": "Master's Claymore",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "261"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "32"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "260"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "262",
+    "Name": "Uncommon Robust Hide",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "263",
+    "Name": "Uncommon Hardened Leather",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "263"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "262"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "251"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "264",
+    "Name": "Master's Claymore",
+    "Tier": 6,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "264"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "35"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "263"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "265",
+    "Name": "Rare Robust Hide",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "266",
+    "Name": "Rare Hardened Leather",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "266"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "265"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "254"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "267",
+    "Name": "Master's Claymore",
+    "Tier": 6,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "267"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "38"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "266"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "268",
+    "Name": "Exceptional Robust Hide",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "269",
+    "Name": "Exceptional Hardened Leather",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "269"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "268"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "257"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "270",
+    "Name": "Master's Claymore",
+    "Tier": 6,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "270"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "41"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "269"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "271",
+    "Name": "Thick Hide",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "272",
+    "Name": "Reinforced Leather",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "272"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "271"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "260"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "273",
+    "Name": "Grandmaster's Claymore",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "273"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "44"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "272"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "274",
+    "Name": "Uncommon Thick Hide",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "275",
+    "Name": "Uncommon Reinforced Leather",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "275"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "274"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "263"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "276",
+    "Name": "Grandmaster's Claymore",
+    "Tier": 7,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "276"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "47"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "275"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "277",
+    "Name": "Rare Thick Hide",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "278",
+    "Name": "Rare Reinforced Leather",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "278"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "277"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "266"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "279",
+    "Name": "Grandmaster's Claymore",
+    "Tier": 7,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "279"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "50"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "278"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "280",
+    "Name": "Exceptional Thick Hide",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "281",
+    "Name": "Exceptional Reinforced Leather",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "281"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "280"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "269"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "282",
+    "Name": "Grandmaster's Claymore",
+    "Tier": 7,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "282"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "53"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "281"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "283",
+    "Name": "Resilient Hide",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "284",
+    "Name": "Fortified Leather",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "284"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "283"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "272"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "285",
+    "Name": "Elder's Claymore",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "285"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "56"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "284"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "286",
+    "Name": "Uncommon Resilient Hide",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": null
+  },
+  {
+    "$id": "287",
+    "Name": "Uncommon Fortified Leather",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "287"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "286"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "275"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "288",
+    "Name": "Elder's Claymore",
+    "Tier": 8,
+    "Rarity": 2,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "288"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "59"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "287"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "289",
+    "Name": "Rare Resilient Hide",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": null
+  },
+  {
+    "$id": "290",
+    "Name": "Rare Fortified Leather",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "290"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "289"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "278"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "291",
+    "Name": "Elder's Claymore",
+    "Tier": 8,
+    "Rarity": 3,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "291"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "62"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "290"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "292",
+    "Name": "Exceptional Resilient Hide",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": null
+  },
+  {
+    "$id": "293",
+    "Name": "Exceptional Fortified Leather",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "293"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "292"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "281"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "294",
+    "Name": "Elder's Claymore",
+    "Tier": 8,
+    "Rarity": 4,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "294"
+      },
+      "Components": [
+        {
+          "Count": 20,
+          "Item": {
+            "$ref": "65"
+          }
+        },
+        {
+          "Count": 12,
+          "Item": {
+            "$ref": "293"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "295",
+    "Name": "Cotton",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "296",
+    "Name": "Simple Cloth",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "296"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "295"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "297",
+    "Name": "Novice's Cape",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "297"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "296"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "234"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "298",
+    "Name": "Flax",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "299",
+    "Name": "Neat Cloth",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "299"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "298"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "296"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "300",
+    "Name": "Journeyman's Cape",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "300"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "299"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "235"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "301",
+    "Name": "Hemp",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "302",
+    "Name": "Fine Cloth",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "302"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "301"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "299"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "303",
+    "Name": "Adept's Cape",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "303"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "302"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "236"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "304",
+    "Name": "Skyflower",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "305",
+    "Name": "Ornate Cloth",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "305"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "304"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "302"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "306",
+    "Name": "Expert's Cape",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "306"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "305"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "248"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "307",
+    "Name": "Redleaf Cotton",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "308",
+    "Name": "Lavish Cloth",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "308"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "307"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "305"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "309",
+    "Name": "Master's Cape",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "309"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "308"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "260"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "310",
+    "Name": "Sunflax",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "311",
+    "Name": "Opulent Cloth",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "311"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "310"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "308"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "312",
+    "Name": "Grandmaster's Cape",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "312"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "311"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "272"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "313",
+    "Name": "Ghost Hemp",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "314",
+    "Name": "Baroque Cloth",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "314"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "313"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "311"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "315",
+    "Name": "Elder's Cape",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "315"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "314"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "284"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "316",
+    "Name": "Novice's Cape",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "316"
+      },
+      "Components": [
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "296"
+          }
+        },
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "234"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "317",
+    "Name": "Journeyman's Cape",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "317"
+      },
+      "Components": [
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "299"
+          }
+        },
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "235"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "318",
+    "Name": "Adept's Cape",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "318"
+      },
+      "Components": [
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "302"
+          }
+        },
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "236"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "319",
+    "Name": "Expert's Cape",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "319"
+      },
+      "Components": [
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "305"
+          }
+        },
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "248"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "320",
+    "Name": "Master's Cape",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "320"
+      },
+      "Components": [
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "308"
+          }
+        },
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "260"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "321",
+    "Name": "Grandmaster's Cape",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "321"
+      },
+      "Components": [
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "311"
+          }
+        },
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "272"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "322",
+    "Name": "Elder's Cape",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "322"
+      },
+      "Components": [
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "314"
+          }
+        },
+        {
+          "Count": 4,
+          "Item": {
+            "$ref": "284"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "323",
+    "Name": "Birch Logs",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "324",
+    "Name": "Birch Planks",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "324"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "323"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "325",
+    "Name": "Novice's Axe",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "325"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "324"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "326",
+    "Name": "Chestnut Logs",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "327",
+    "Name": "Chestnut Planks",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "327"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "326"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "324"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "328",
+    "Name": "Journeyman's Axe",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "328"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "327"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "329",
+    "Name": "Pine Logs",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "330",
+    "Name": "Pine Planks",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "330"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "329"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "327"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "331",
+    "Name": "Adept's Axe",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "331"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "330"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "332",
+    "Name": "Cedar Logs",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "333",
+    "Name": "Cedar Planks",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "333"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "332"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "330"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "334",
+    "Name": "Expert's Axe",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "334"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "333"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "335",
+    "Name": "Bloodoak Logs",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "336",
+    "Name": "Bloodoak Planks",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "336"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "335"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "333"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "337",
+    "Name": "Master's Axe",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "337"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "336"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "338",
+    "Name": "Ashenbark Logs",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "339",
+    "Name": "Ashenbark Planks",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "339"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "338"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "336"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "340",
+    "Name": "Grandmaster's Axe",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "340"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "339"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "341",
+    "Name": "Whitewood Logs",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "342",
+    "Name": "Whitewood Planks",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "342"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "341"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "339"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "343",
+    "Name": "Elder's Axe",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "343"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "342"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "344",
+    "Name": "Novice's Stone Hammer",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "344"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "324"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "345",
+    "Name": "Journeyman's Stone Hammer",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "345"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "327"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "346",
+    "Name": "Adept's Stone Hammer",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "346"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "330"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "347",
+    "Name": "Expert's Stone Hammer",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "347"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "333"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "348",
+    "Name": "Master's Stone Hammer",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "348"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "336"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "349",
+    "Name": "Grandmaster's Stone Hammer",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "349"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "339"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "350",
+    "Name": "Elder's Stone Hammer",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "350"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "342"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "351",
+    "Name": "Novice's Pickaxe",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "351"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "324"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "352",
+    "Name": "Journeyman's Pickaxe",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "352"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "327"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "353",
+    "Name": "Adept's Pickaxe",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "353"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "330"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "354",
+    "Name": "Expert's Pickaxe",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "354"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "333"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "355",
+    "Name": "Master's Pickaxe",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "355"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "336"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "356",
+    "Name": "Grandmaster's Pickaxe",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "356"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "339"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "357",
+    "Name": "Elder's Pickaxe",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "357"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "342"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "358",
+    "Name": "Novice's Skinning Knife",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "358"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "324"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "359",
+    "Name": "Journeyman's Skinning Knife",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "359"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "327"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "360",
+    "Name": "Adept's Skinning Knife",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "360"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "330"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "361",
+    "Name": "Expert's Skinning Knife",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "361"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "333"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "362",
+    "Name": "Master's Skinning Knife",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "362"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "336"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "363",
+    "Name": "Grandmaster's Skinning Knife",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "363"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "339"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "364",
+    "Name": "Elder's Skinning Knife",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "364"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "342"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "365",
+    "Name": "Novice's Sickle",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "365"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "324"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "2"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "366",
+    "Name": "Journeyman's Sickle",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "366"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "327"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "5"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "367",
+    "Name": "Adept's Sickle",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "367"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "330"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "8"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "368",
+    "Name": "Expert's Sickle",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "368"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "333"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "20"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "369",
+    "Name": "Master's Sickle",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "369"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "336"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "32"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "370",
+    "Name": "Grandmaster's Sickle",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "370"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "339"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "44"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "371",
+    "Name": "Elder's Sickle",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "371"
+      },
+      "Components": [
+        {
+          "Count": 6,
+          "Item": {
+            "$ref": "342"
+          }
+        },
+        {
+          "Count": 2,
+          "Item": {
+            "$ref": "56"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "372",
+    "Name": "Sandstone",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "373",
+    "Name": "Limestone",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "374",
+    "Name": "Limestone Block",
+    "Tier": 2,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "374"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "373"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "375",
+    "Name": "Sandstone Block",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "375"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "372"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "374"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "376",
+    "Name": "Journeyman's Demolition Hammer",
+    "Tier": 3,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "376"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "327"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "375"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "377",
+    "Name": "Travertine",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "378",
+    "Name": "Travertine Block",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "378"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "377"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "375"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "379",
+    "Name": "Adept's Demolition Hammer",
+    "Tier": 4,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "379"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "330"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "378"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "380",
+    "Name": "Granite",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "381",
+    "Name": "Granite Block",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "381"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "380"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "378"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "382",
+    "Name": "Expert's Demolition Hammer",
+    "Tier": 5,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "382"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "333"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "381"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "383",
+    "Name": "Slate",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "384",
+    "Name": "Slate Block",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "384"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "383"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "381"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "385",
+    "Name": "Master's Demolition Hammer",
+    "Tier": 6,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "385"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "336"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "384"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "386",
+    "Name": "Basalt",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "387",
+    "Name": "Basalt Block",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "387"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "386"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "384"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "388",
+    "Name": "Grandmaster's Demolition Hammer",
+    "Tier": 7,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "388"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "339"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "387"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "389",
+    "Name": "Marble",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": null
+  },
+  {
+    "$id": "390",
+    "Name": "Marble Block",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "390"
+      },
+      "Components": [
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "389"
+          }
+        },
+        {
+          "Count": 1,
+          "Item": {
+            "$ref": "387"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$id": "391",
+    "Name": "Elder's Demolition Hammer",
+    "Tier": 8,
+    "Rarity": 1,
+    "Recipe": {
+      "CreatedItem": {
+        "$ref": "391"
+      },
+      "Components": [
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "342"
+          }
+        },
+        {
+          "Count": 8,
+          "Item": {
+            "$ref": "390"
+          }
+        }
+      ]
+    }
+  }
+]
