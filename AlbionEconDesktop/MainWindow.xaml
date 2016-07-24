@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:AlbionEconDesktop"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:WindowContext/>
+    </Window.DataContext>
     <Grid>
-        
+        <ListView x:Name="ItemListView" ItemsSource="{Binding Items}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>

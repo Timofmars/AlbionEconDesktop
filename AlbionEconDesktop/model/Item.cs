@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AlbionEconDesktop.model
 {
     public class Item
     {
-        private static List<Item> _items = new List<Item>();
-        public static List<Item> All { get { return _items; } }
-    
-        public string Name;
+        private static ObservableCollection<Item> _items = new ObservableCollection<Item>();
+        public static ObservableCollection<Item> All { get { return _items; } }
+
+        private string _name;
+        public string Name {
+            get { return _name; }
+            set { _name = value; }
+        }
         public Recipe Recipe;
         public int Tier;
         public int Rarity;
