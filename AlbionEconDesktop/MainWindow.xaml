@@ -11,20 +11,50 @@
     </Window.DataContext>
     <TabControl>
         <TabItem Header="Itemlist">
-            <ListView x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
-                            <TextBlock Text="{Binding Name}" FontWeight="Bold" Grid.Column="0"/>
-                            <TextBlock Text="{Binding Price}" Grid.Column="1"/>
-                        </Grid>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock Text="Filter: " Grid.Column="0" Grid.Row="0" />
+                <TextBox Grid.Column="1" Grid.Row="0" TextChanged="ItemFilterBox_TextChanged"/>
+                <ListView x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="2">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Rarity}" Value="1">
+                                    <Setter Property="Background" Value="Gainsboro" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Rarity}" Value="2">
+                                <Setter Property="Background" Value="LimeGreen"  />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Rarity}" Value="3">
+                                    <Setter Property="Background" Value="RoyalBlue"  />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Rarity}" Value="4">
+                                    <Setter Property="Background" Value="MediumPurple"  />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold" Grid.Column="0"/>
+                                <TextBlock Text="{Binding Price}" Grid.Column="1"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
         </TabItem>
         <TabItem Header="PriceHistory">
             <DockPanel LastChildFill="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
