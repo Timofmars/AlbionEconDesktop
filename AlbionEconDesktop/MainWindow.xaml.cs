@@ -38,10 +38,8 @@ namespace AlbionEconDesktop
         {
             JsonHandler.DeserializeRecipes();
             PriceStorage.LoadAll();
-            WindowContext._price = Item.FindByName("Copper Ore");
             InitializeComponent();
             _context = DataContext as WindowContext;
-            var x = new DataGrid();
         }
         private void Itemlist_MouseUp(object sender, System.Windows.Input.MouseEventArgs e)
         {
