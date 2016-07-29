@@ -9,15 +9,41 @@
     <Window.DataContext>
         <local:WindowContext/>
     </Window.DataContext>
-    <Grid>
-        <ListView x:Name="ItemListView" ItemsSource="{Binding Items}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <TextBlock Text="{Binding Name}" FontWeight="Bold" />
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </Grid>
+    <TabControl>
+        <TabItem Header="Itemlist">
+            <ListView x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{Binding Name}" FontWeight="Bold" Grid.Column="0"/>
+                            <TextBlock Text="{Binding Price}" Grid.Column="1"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </TabItem>
+        <TabItem Header="PriceHistory">
+            <DockPanel LastChildFill="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <TextBlock DockPanel.Dock="Top" Text="{Binding PriceHistoryItem.Name}" />
+                <ListView ItemsSource="{Binding PriceHistoryItem.PriceHistory}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Value}" Grid.Column="0" />
+                                <TextBlock Text="{Binding Timestamp}" Grid.Column="1" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </DockPanel>
+        </TabItem>
+    </TabControl>
 </Window>

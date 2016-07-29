@@ -59,7 +59,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="controller\PriceUpdateController.cs" />
+    <Compile Include="lib\Settings.cs" />
     <Compile Include="storage\JsonHandler.cs" />
+    <Compile Include="storage\PriceStorage.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

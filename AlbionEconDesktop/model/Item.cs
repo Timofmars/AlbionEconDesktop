@@ -18,7 +18,19 @@ namespace AlbionEconDesktop.model
         public int Tier;
         public int Rarity;
 
-        public List<Price> Prices = new List<Price>();
+        public List<Price> _prices = new List<Price>();
+        public List<Price> PriceHistory { get { return _prices; } }
+        public int Price {
+            get {
+                if (_prices.Count == 0) return 0;
+                return _prices[0].Value;
+            }
+        }
+        public void AddPrice(Price price)
+        {
+            _prices.Insert(0,price);
+            price.Item = this;
+        }
         
         public static Item FindByName(string name)
         {
