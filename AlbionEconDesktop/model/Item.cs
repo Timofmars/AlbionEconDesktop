@@ -6,8 +6,8 @@ namespace AlbionEconDesktop.model
 {
     public class Item
     {
-        private static ObservableCollection<Item> _items = new ObservableCollection<Item>();
-        public static ObservableCollection<Item> All { get { return _items; } }
+        private static List<Item> _items = new List<Item>();
+        public static List<Item> All { get { return _items; } }
 
         private string _name;
         public string Name {
@@ -15,8 +15,8 @@ namespace AlbionEconDesktop.model
             set { _name = value; }
         }
         public Recipe Recipe;
-        public int Tier;
-        public int Rarity;
+        public int Tier { get; set; }
+        public int Rarity { get; set; }
 
         public List<Price> _prices = new List<Price>();
         public List<Price> PriceHistory { get { return _prices; } }
