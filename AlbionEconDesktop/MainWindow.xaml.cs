@@ -81,8 +81,18 @@ namespace AlbionEconDesktop
         }
         private void UpdatePriceSaveButton_Clicked(object sender, RoutedEventArgs e)
         {
-            PriceUpdateController.AddPrice(WindowContext.PriceUpdateQueue[0], Int32.Parse(PriceUpdateTextBox.Text));
+            int v;
+            try
+            {
+                v = Int32.Parse(PriceUpdateTextBox.Text);
+            }
+            catch (OverflowException)
+            {
+                v = Int32.MaxValue;
+            }
+            PriceUpdateController.AddPrice(WindowContext.PriceUpdateQueue[0], v);
             PriceUpdateTextBox.SelectAll();
+            UpdateItemList();
         }
         #endregion
     }
