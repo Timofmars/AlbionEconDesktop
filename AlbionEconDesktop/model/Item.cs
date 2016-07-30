@@ -36,6 +36,10 @@ namespace AlbionEconDesktop.model
         {
             return _items.Where(i => i.Name == name).FirstOrDefault();
         }
+        public static Item FindByName(string name, int rarity)
+        {
+            return _items.Where(i => i.Name == name && i.Rarity == rarity).FirstOrDefault();
+        }
         public override string ToString()
         {
             return Name;

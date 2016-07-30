@@ -16,7 +16,7 @@ namespace AlbionEconDesktop.storage
             }
             using (StreamWriter sw = File.AppendText(FilePath))
             {
-                var line = String.Format("{0}@{1}@{2}", price.Item, price.Value, price.Timestamp);
+                var line = String.Format("{0}@{1}@{2}@{3}", price.Item.Name, price.Value, price.Timestamp, price.Item.Rarity);
                 sw.WriteLine(line);
             }
         }
@@ -29,7 +29,7 @@ namespace AlbionEconDesktop.storage
                 foreach (var line in lines)
                 {
                     var sl = line.Split('@');
-                    var item = Item.FindByName(sl[0]);
+                    var item = Item.FindByName(sl[0], Int32.Parse(sl[3]));
                     var itemValue = Int32.Parse(sl[1]);
                     var date = DateTime.Parse(sl[2]);
 
