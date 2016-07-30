@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿using System;
 using System.Collections.Generic;
 
 namespace AlbionEconDesktop.model
@@ -13,7 +13,6 @@ namespace AlbionEconDesktop.model
         
         public Item CreatedItem;
 
-        [JsonProperty("Components")]
         public List<Component> Components;
 
         public int CraftCost
@@ -27,7 +26,18 @@ namespace AlbionEconDesktop.model
                 return c;
             }
         }
-
+        public DateTime OldestPrice
+        {
+            get
+            {
+                DateTime d = DateTime.Now;
+                foreach (var c in Components)
+                {
+                    if (c.Item.PriceDate < d) d = c.Item.PriceDate;
+                }
+                return d;
+            }
+        }
         public override string ToString()
         {
             var str = "(";

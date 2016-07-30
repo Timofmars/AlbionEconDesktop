@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 
 namespace AlbionEconDesktop.model
 {
-    public class Item
+    public class Item : INotifyPropertyChanged
     {
         private static List<Item> _items = new List<Item>();
         public static List<Item> All { get { return _items; } }
@@ -14,9 +15,10 @@ namespace AlbionEconDesktop.model
             get { return _name; }
             set { _name = value; }
         }
-        public Recipe Recipe;
+        public Recipe Recipe { get; set; }
         public int Tier { get; set; }
         public int Rarity { get; set; }
+        public ItemClass Class { get; set; }
 
         public List<Price> _prices = new List<Price>();
         public List<Price> PriceHistory { get { return _prices; } }
@@ -26,6 +28,7 @@ namespace AlbionEconDesktop.model
                 return _prices[0].Value;
             }
         }
+        public DateTime PriceDate { get { return _prices.Count > 0 ? _prices[0].Timestamp : new DateTime(1970,1,1,0,0,0,0,DateTimeKind.Utc); } }
         public int Profit
         {
             get
@@ -38,6 +41,7 @@ namespace AlbionEconDesktop.model
         {
             _prices.Insert(0,price);
             price.Item = this;
+            NotifyPropertyChanged("Price", "Profit", "PriceHistory", "PriceDate");
         }
         
         public static Item FindByName(string name)
@@ -57,6 +61,15 @@ namespace AlbionEconDesktop.model
         internal void OnDeserializedMethod(System.Runtime.Serialization.StreamingContext context)
         {
             _items.Add(this);
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(params string[] propertyName)
+        {
+            foreach (var prop in propertyName)
+            {
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+            }
         }
     }
 }

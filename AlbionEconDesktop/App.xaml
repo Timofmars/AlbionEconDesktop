@@ -1,9 +1,60 @@
 ﻿<Application x:Class="AlbionEconDesktop.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:AlbionEconDesktop"
+             xmlns:local="clr-namespace:AlbionEconDesktop.view"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <local:TierToImageConverter x:Key="tierConverter"/>
+        <local:RarityToImageConverter x:Key="rarityConverter"/>
+        <local:ProfitToColorConverter x:Key="profitConverter"/>
+        <local:ClassToImageConverter x:Key="classConverter"/>
+        <DataTemplate x:Key="ItemListTemplate">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Viewbox Grid.RowSpan="3" Height="64" Width="64" HorizontalAlignment="Left" Stretch="Uniform">
+                    <Grid>
+                        <Image Stretch="UniformToFill" Source="resources/images/item_background.png"/>
+                        <Image Stretch="UniformToFill" Source="{Binding Tier,Converter={StaticResource tierConverter}}" Margin="5,3,15,20"/>
+                        <Image Stretch="UniformToFill" Source="{Binding Rarity,Converter={StaticResource rarityConverter}}" Margin="30,145,100,5">
+                            <Image.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="1.3" ScaleX="1.3"/>
+                                </TransformGroup>
+                            </Image.RenderTransform>
+                        </Image>
+                        <Image Stretch="Uniform" Source="{Binding Class,Converter={StaticResource classConverter}}" Margin="40,40,40,40" />
+                    </Grid>
+                </Viewbox>
+                <TextBlock Text="{Binding Name}" FontWeight="Bold" Grid.Row="0" Grid.Column="1"/>
+                <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                    <TextBlock Text="Price: " />
+                    <TextBlock Text="{Binding Price}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+                    <TextBlock Text="Craft Price (Profit): " />
+                    <TextBlock Text="{Binding Recipe.CraftCost}" />
+                    <TextBlock Text=" ("/>
+                    <TextBlock Text="{Binding Profit}" Foreground="{Binding Profit, Mode=OneWay, Converter={StaticResource profitConverter}}"/>
+                    <TextBlock Text=")"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right">
+                    <TextBlock Text="Price Date: " />
+                    <TextBlock Text="{Binding PriceDate}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right">
+                    <TextBlock Text="Materials Date: " />
+                    <TextBlock Text="{Binding Recipe.OldestPrice}" />
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
     </Application.Resources>
 </Application>

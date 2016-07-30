@@ -25,38 +25,7 @@
                 <TextBlock Text="Filter: " Grid.Column="0" Grid.Row="0" />
                 <CheckBox x:Name="ItemListFilterUnprofitCheckBox" Content="Hide unprofitable" IsChecked="{Binding FilterUnprofitable}" Grid.Column="2" Grid.Row="1" Checked="ItemListFilterUnprofitCheckBox_CheckedChanged" Unchecked="ItemListFilterUnprofitCheckBox_CheckedChanged"/>
                 <TextBox Grid.Column="1" Grid.Row="0" TextChanged="ItemFilterBox_TextChanged"/>
-                <ListView x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch" Grid.Row="2" Grid.ColumnSpan="2">
-                    <ListView.ItemContainerStyle>
-                        <Style TargetType="ListViewItem">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Rarity}" Value="1">
-                                    <Setter Property="Background" Value="Gainsboro" />
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding Rarity}" Value="2">
-                                <Setter Property="Background" Value="LimeGreen"  />
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding Rarity}" Value="3">
-                                    <Setter Property="Background" Value="RoyalBlue"  />
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding Rarity}" Value="4">
-                                    <Setter Property="Background" Value="MediumPurple"  />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </ListView.ItemContainerStyle>
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <TextBlock Text="{Binding Name}" FontWeight="Bold" Grid.Column="0"/>
-                                <TextBlock Text="{Binding Price}" Grid.Column="1"/>
-                            </Grid>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <ListView ItemTemplate="{StaticResource ItemListTemplate}"  x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch" Grid.Row="2" Grid.ColumnSpan="2" />
                 <Button Content="Add shown to UpdateQueue" Grid.Column="0" Grid.Row="3" Click="AddToUpdateQueueButton_Clicked" Height="20" VerticalAlignment="Bottom"/>
                 <CheckBox x:Name="AddRecursiveCheckbox" Content="Recursively add materials" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"/>
             </Grid>
@@ -93,12 +62,12 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <TextBlock Text="Item: " Grid.Column="0" Grid.Row="0"/>
-                <TextBox Text="{Binding PriceUpdateQueue[0].Name}" Grid.Column="1" Grid.Row="0"/>
+                <Label Content="{Binding PriceUpdateQueue[0]}" Grid.Column="1" Grid.Row="0" ContentTemplate="{StaticResource ItemListTemplate}" HorizontalAlignment="Stretch"/>
                 <Button Content="Skip" Grid.Column="2" Grid.Row="0" ToolTip="Hint: Saving a price of 0 or less will also skip."/>
                 <TextBlock Text="Price:" Grid.Column="0" Grid.Row="1"/>
                 <TextBox x:Name="PriceUpdateTextBox" Text="{Binding PriceUpdateQueue[0].Price, Mode=OneWay}" Grid.Column="1" Grid.Row="1" KeyUp="UpdateQueuePrice_KeyUp" />
                 <Button Content="Save" Grid.Column="2" Grid.Row="1" ToolTip="Hint: Pressing enter with price box active has the same effect." />
-                <ListView ItemsSource="{Binding PriceUpdateQueue}" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2"/>
+                <ListView ItemTemplate="{StaticResource ItemListTemplate}" ItemsSource="{Binding PriceUpdateQueue}" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" HorizontalContentAlignment="Stretch" />
             </Grid>
         </TabItem>
     </TabControl>
