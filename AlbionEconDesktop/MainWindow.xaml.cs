@@ -21,8 +21,12 @@ namespace AlbionEconDesktop
             get { return _filter; }
             set { _filter = value; NotifyPropertyChanged("Items"); }
         }
+        public static bool FilterUnprofitable { get; set; }
         public static ObservableCollection<Item> PriceUpdateQueue { get { return PriceUpdateController.Queue; } }
-        public static ObservableCollection<Item> Items { get { return new ObservableCollection<Item>(Item.All.Where(p => p.Name.ToLower().Contains(_filter))); } }
+        public static ObservableCollection<Item> Items { get {
+                return new ObservableCollection<Item>(Item.All.Where(i => i.Name.ToLower().Contains(_filter) && (!FilterUnprofitable || i.Profit > 0)));
+            }
+        }
         private static Item _price;
         public Item PriceHistoryItem {
             get { return _price; }
@@ -49,11 +53,18 @@ namespace AlbionEconDesktop
         {
             _context.PriceHistoryItem = (sender as ListView).SelectedItem as Item;
         }
-
+        private void UpdateItemList()
+        {
+            ItemListView.ItemsSource = WindowContext.Items;
+        }
         private void ItemFilterBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             _context.ItemListFilter = (sender as TextBox).Text.ToLower();
-            ItemListView.ItemsSource = WindowContext.Items;
+            UpdateItemList();
+        }
+        private void ItemListFilterUnprofitCheckBox_CheckedChanged(object sender, RoutedEventArgs e)
+        {
+            UpdateItemList();
         }
         private void AddToUpdateQueueButton_Clicked(object sender, RoutedEventArgs e)
         {

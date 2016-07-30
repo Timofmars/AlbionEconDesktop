@@ -16,6 +16,18 @@ namespace AlbionEconDesktop.model
         [JsonProperty("Components")]
         public List<Component> Components;
 
+        public int CraftCost
+        {
+            get
+            {
+                var c = 0;
+                foreach (var comp in Components) {
+                    c += comp.Item.Price * comp.Count;
+                }
+                return c;
+            }
+        }
+
         public override string ToString()
         {
             var str = "(";

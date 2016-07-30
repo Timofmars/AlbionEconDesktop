@@ -18,12 +18,14 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="*" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <TextBlock Text="Filter: " Grid.Column="0" Grid.Row="0" />
+                <CheckBox x:Name="ItemListFilterUnprofitCheckBox" Content="Hide unprofitable" IsChecked="{Binding FilterUnprofitable}" Grid.Column="2" Grid.Row="1" Checked="ItemListFilterUnprofitCheckBox_CheckedChanged" Unchecked="ItemListFilterUnprofitCheckBox_CheckedChanged"/>
                 <TextBox Grid.Column="1" Grid.Row="0" TextChanged="ItemFilterBox_TextChanged"/>
-                <ListView x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="2">
+                <ListView x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch" Grid.Row="2" Grid.ColumnSpan="2">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Style.Triggers>
@@ -55,8 +57,8 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <Button Content="Add shown to UpdateQueue" Grid.Column="0" Grid.Row="2" Click="AddToUpdateQueueButton_Clicked" Height="20" VerticalAlignment="Bottom"/>
-                <CheckBox x:Name="AddRecursiveCheckbox" Content="Recursively add materials" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center"/>
+                <Button Content="Add shown to UpdateQueue" Grid.Column="0" Grid.Row="3" Click="AddToUpdateQueueButton_Clicked" Height="20" VerticalAlignment="Bottom"/>
+                <CheckBox x:Name="AddRecursiveCheckbox" Content="Recursively add materials" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"/>
             </Grid>
         </TabItem>
         <TabItem Header="PriceHistory">

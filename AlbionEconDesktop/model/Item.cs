@@ -26,6 +26,14 @@ namespace AlbionEconDesktop.model
                 return _prices[0].Value;
             }
         }
+        public int Profit
+        {
+            get
+            {
+                if (Recipe == null) return 0;
+                return Price - Recipe.CraftCost;
+            }
+        }
         public void AddPrice(Price price)
         {
             _prices.Insert(0,price);
