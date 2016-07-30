@@ -42,7 +42,7 @@ namespace AlbionEconDesktop.model
         }
         public override string ToString()
         {
-            return Name;
+            return string.Format("{0} (Rarity: {1})", Name, Rarity);
         }
 
         [System.Runtime.Serialization.OnDeserialized]

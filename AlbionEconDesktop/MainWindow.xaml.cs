@@ -1,10 +1,13 @@
-﻿using AlbionEconDesktop.model;
+﻿using AlbionEconDesktop.controller;
+using AlbionEconDesktop.model;
 using AlbionEconDesktop.storage;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace AlbionEconDesktop
 {
@@ -18,6 +21,7 @@ namespace AlbionEconDesktop
             get { return _filter; }
             set { _filter = value; NotifyPropertyChanged("Items"); }
         }
+        public static ObservableCollection<Item> PriceUpdateQueue { get { return PriceUpdateController.Queue; } }
         public static ObservableCollection<Item> Items { get { return new ObservableCollection<Item>(Item.All.Where(p => p.Name.ToLower().Contains(_filter))); } }
         private static Item _price;
         public Item PriceHistoryItem {
@@ -51,5 +55,24 @@ namespace AlbionEconDesktop
             _context.ItemListFilter = (sender as TextBox).Text.ToLower();
             ItemListView.ItemsSource = WindowContext.Items;
         }
+        private void AddToUpdateQueueButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            PriceUpdateController.AddToQueue(ItemListView.ItemsSource as System.Collections.Generic.IEnumerable<Item>, (bool) AddRecursiveCheckbox.IsChecked);
+        }
+
+        #region UpdateQueue
+        private void UpdateQueuePrice_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                UpdatePriceSaveButton_Clicked(null, null);
+            }
+        }
+        private void UpdatePriceSaveButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            PriceUpdateController.AddPrice(WindowContext.PriceUpdateQueue[0], Int32.Parse(PriceUpdateTextBox.Text));
+            PriceUpdateTextBox.SelectAll();
+        }
+        #endregion
     }
 }

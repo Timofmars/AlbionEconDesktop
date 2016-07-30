@@ -14,7 +14,7 @@ namespace AlbionEconDesktop.model
         public Item CreatedItem;
 
         [JsonProperty("Components")]
-        List<Component> Components;
+        public List<Component> Components;
 
         public override string ToString()
         {
