@@ -17,7 +17,7 @@ namespace AlbionEconDesktop.model
         }
         public Recipe Recipe { get; set; }
         public int Tier { get; set; }
-        public int Rarity { get; set; }
+        public int Rarity { get; set; } = 1;
         public ItemClass Class { get; set; }
 
         public List<Price> _prices = new List<Price>();
@@ -60,6 +60,7 @@ namespace AlbionEconDesktop.model
         [System.Runtime.Serialization.OnDeserialized]
         internal void OnDeserializedMethod(System.Runtime.Serialization.StreamingContext context)
         {
+            
             _items.Add(this);
         }
 

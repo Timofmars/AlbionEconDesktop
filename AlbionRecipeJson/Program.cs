@@ -372,7 +372,7 @@ namespace AlbionRecipeJson
             r = new Recipe(GooseOmelette, 10);
             r.AddComponent(RawGoose, 24);
             r.AddComponent(Cabbage, 12);
-            r.AddComponent(GooseEggs,6);
+            r.AddComponent(GooseEggs, 6);
 
             var Pig = new Item("Pig", 7);
             l.Add(Pig);
@@ -418,7 +418,7 @@ namespace AlbionRecipeJson
             var GoatStew = new Item("Goat Stew", 4);
             l.Add(GoatStew);
             r = new Recipe(GoatStew, 10);
-            r.AddComponent(RawGoat,8);
+            r.AddComponent(RawGoat, 8);
             r.AddComponent(Bread, 4);
             r.AddComponent(Turnips, 4);
 
@@ -488,7 +488,7 @@ namespace AlbionRecipeJson
             #endregion
             #region Butcher
             r = new Recipe(RawGoat);
-            r.AddComponent(Goat,1);
+            r.AddComponent(Goat, 1);
 
             r = new Recipe(RawGoose);
             r.AddComponent(Goose, 1);
@@ -500,7 +500,201 @@ namespace AlbionRecipeJson
             r.AddComponent(Pig, 1);
 
             r = new Recipe(RawBeef);
-            r.AddComponent(Cow,1);
+            r.AddComponent(Cow, 1);
+            #endregion
+            #region mounts
+            string[] TierPrefix = { "", "Beginner's", "Novice's", "Journeyman's", "Adept's", "Expert's", "Master's", "Grandmaster's", "Elder's" };
+            for (var tier = 3; tier <= 8; tier++)
+            {
+                var horse = new Item(TierPrefix[tier] + " Horse", tier);
+                l.Add(horse);
+                var rhorse = new Item(TierPrefix[tier] + " Riding Horse", tier);
+                l.Add(rhorse);
+                r = new Recipe(horse);
+                r.AddComponent(horse, 1);
+                r.AddComponent(Helpers.GetResourceByTier(ResourceType.Leather, tier, 1), 20);
+
+                var ahorse = new Item(TierPrefix[tier] + " Armored Horse", tier);
+                l.Add(ahorse);
+                r = new Recipe(ahorse);
+                r.AddComponent(horse, 1);
+                r.AddComponent(Helpers.GetResourceByTier(ResourceType.Cloth, tier, 1), 10);
+                r.AddComponent(Helpers.GetResourceByTier(ResourceType.Bar, tier, 1), 10);
+
+                var ox = new Item(TierPrefix[tier] + " Transport Ox", tier);
+                l.Add(ox);
+                var rox = new Item(TierPrefix[tier] + " Riding Horse", tier);
+                l.Add(rox);
+                r = new Recipe(rox);
+                r.AddComponent(ox, 1);
+                r.AddComponent(Helpers.GetResourceByTier(ResourceType.Plank, tier, 1), 20);
+            }
+            #endregion
+
+            #region alchemist
+            Item[] herbs = { null, null,
+                new Item("Arcane Agaric", 2),
+                new Item("Brightleaf Comfrey", 3),
+                new Item("Crenellated Burdock", 4),
+                new Item("Dragon Teasel", 5),
+                new Item("Elusive Foxglove", 6),
+                new Item("Firetouched Mullein", 7),
+                new Item("Ghoul Yarrow", 8),
+            };
+            for (var i = 2; i <= 8; i++) l.Add(herbs[i]);
+            #region bootlegger
+            var PotatoSchnapps = new Item("Potato Schnapps", 6);
+            l.Add(PotatoSchnapps);
+            r = new Recipe(PotatoSchnapps);
+            r.AddComponent(Potatoes, 1);
+
+            var CornHooch = new Item("Corn Hooch", 7);
+            l.Add(CornHooch);
+            r = new Recipe(CornHooch);
+            r.AddComponent(BundleofCorn, 1);
+
+            var PumpkinMoonshine = new Item("Pumpkin Moonshine", 8);
+            l.Add(PumpkinMoonshine);
+            r = new Recipe(PumpkinMoonshine);
+            r.AddComponent(Pumpkin, 1);
+            #endregion
+            #region cleanse
+            var cleansepot = new Item("Cleansing Potion", 8);
+            l.Add(cleansepot);
+            r = new Recipe(cleansepot);
+            r.AddComponent(herbs[8], 72);
+            r.AddComponent(herbs[7], 36);
+            r.AddComponent(herbs[6], 36);
+            r.AddComponent(CowsMilk, 38);
+            r.AddComponent(PumpkinMoonshine, 38);
+            #endregion
+            #region cooldown
+            var cdr4 = new Item("Minor Recovery Potion", 4);
+            l.Add(cdr4);
+            r = new Recipe(cdr4);
+            r.AddComponent(herbs[4], 8);
+            r.AddComponent(herbs[3], 4);
+
+            var cdr6 = new Item("Recovery Potion", 6);
+            l.Add(cdr6);
+            r = new Recipe(cdr6);
+            r.AddComponent(herbs[6], 24);
+            r.AddComponent(herbs[5], 12);
+            r.AddComponent(herbs[3], 12);
+            r.AddComponent(SheepsMilk, 6);
+
+            var cdr8 = new Item("Major Recovery Potion", 8);
+            l.Add(cdr8);
+            r = new Recipe(cdr8);
+            r.AddComponent(herbs[8], 72);
+            r.AddComponent(herbs[7], 24);
+            r.AddComponent(herbs[5], 24);
+            r.AddComponent(CowsMilk, 18);
+            r.AddComponent(PumpkinMoonshine, 18);
+            #endregion
+            #region slowfield
+            var chill3 = new Item("Minor Chilling Flask", 3);
+            l.Add(chill3);
+            r = new Recipe(chill3);
+            r.AddComponent(herbs[3], 8);
+
+            var chill5 = new Item("Chilling Flask", 5);
+            l.Add(chill5);
+            r = new Recipe(chill5);
+            r.AddComponent(herbs[5], 24);
+            r.AddComponent(herbs[4], 12);
+            r.AddComponent(GooseEggs, 6);
+
+            var chill7 = new Item("Major Chilling Flask", 7);
+            l.Add(chill7);
+            r = new Recipe(chill7);
+            r.AddComponent(herbs[7], 72);
+            r.AddComponent(herbs[6], 36);
+            r.AddComponent(herbs[4], 36);
+            r.AddComponent(GooseEggs, 18);
+            r.AddComponent(CornHooch, 18);
+            #endregion
+            #region resistance
+            var res3 = new Item("Minor Resistance Potion", 3);
+            l.Add(res3);
+            r = new Recipe(res3);
+            r.AddComponent(herbs[3], 8);
+
+            var res5 = new Item("Chilling Flask", 5);
+            l.Add(res5);
+            r = new Recipe(res5);
+            r.AddComponent(herbs[5], 24);
+            r.AddComponent(herbs[4], 12);
+            r.AddComponent(GoatsMilk, 6);
+
+            var res7 = new Item("Major Chilling Flask", 7);
+            l.Add(res7);
+            r = new Recipe(res7);
+            r.AddComponent(herbs[7], 72);
+            r.AddComponent(herbs[6], 36);
+            r.AddComponent(herbs[4], 36);
+            r.AddComponent(SheepsMilk, 18);
+            r.AddComponent(CornHooch, 18);
+            #endregion
+            #region resistance
+            var revive3 = new Item("Minor Revive Flask", 3);
+            l.Add(revive3);
+            r = new Recipe(revive3);
+            r.AddComponent(herbs[3], 8);
+
+            var revive5 = new Item("Revive Flask", 5);
+            l.Add(revive5);
+            r = new Recipe(revive5);
+            r.AddComponent(herbs[5], 24);
+            r.AddComponent(herbs[4], 12);
+            r.AddComponent(GooseEggs, 6);
+
+            var revive7 = new Item("Major Revive Flask", 7);
+            l.Add(revive7);
+            r = new Recipe(revive7);
+            r.AddComponent(herbs[7], 71);
+            r.AddComponent(herbs[6], 36);
+            r.AddComponent(GooseEggs, 18);
+            r.AddComponent(CornHooch, 18);
+            #endregion
+            #region energy
+            var energy2 = new Item("Minor Energy Potion", 2);
+            l.Add(energy2);
+            r = new Recipe(energy2);
+            r.AddComponent(herbs[2], 8);
+
+            var energy4 = new Item("Energy Potion", 5);
+            l.Add(energy4);
+            r = new Recipe(energy4);
+            r.AddComponent(herbs[4], 24);
+            r.AddComponent(GoatsMilk, 6);
+
+            var energy6 = new Item("Major Energy Potion", 7);
+            l.Add(energy6);
+            r = new Recipe(energy6);
+            r.AddComponent(herbs[6], 72);
+            r.AddComponent(SheepsMilk, 18);
+            r.AddComponent(PotatoSchnapps, 18);
+            #endregion
+            #region healing
+            var healing2 = new Item("Minor Healing Potion", 2);
+            l.Add(healing2);
+            r = new Recipe(healing2);
+            r.AddComponent(herbs[2], 8);
+
+            var healing4 = new Item("Healing Potion", 5);
+            l.Add(healing4);
+            r = new Recipe(healing4);
+            r.AddComponent(herbs[4], 24);
+            r.AddComponent(HenEgg, 6);
+
+            var healing6 = new Item("Major Healing Potion", 7);
+            l.Add(healing6);
+            r = new Recipe(healing6);
+            r.AddComponent(herbs[6], 72);
+            r.AddComponent(GooseEggs, 18);
+            r.AddComponent(PotatoSchnapps, 18);
+            #endregion
             #endregion
         }
         delegate void GroupRecipe(int tier, int rarity, Recipe recipe);
