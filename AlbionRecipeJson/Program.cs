@@ -510,7 +510,7 @@ namespace AlbionRecipeJson
                 l.Add(horse);
                 var rhorse = new Item(TierPrefix[tier] + " Riding Horse", tier);
                 l.Add(rhorse);
-                r = new Recipe(horse);
+                r = new Recipe(rhorse);
                 r.AddComponent(horse, 1);
                 r.AddComponent(Helpers.GetResourceByTier(ResourceType.Leather, tier, 1), 20);
 
@@ -636,7 +636,7 @@ namespace AlbionRecipeJson
             r.AddComponent(SheepsMilk, 18);
             r.AddComponent(CornHooch, 18);
             #endregion
-            #region resistance
+            #region revival
             var revive3 = new Item("Minor Revive Flask", 3);
             l.Add(revive3);
             r = new Recipe(revive3);
@@ -663,13 +663,13 @@ namespace AlbionRecipeJson
             r = new Recipe(energy2);
             r.AddComponent(herbs[2], 8);
 
-            var energy4 = new Item("Energy Potion", 5);
+            var energy4 = new Item("Energy Potion", 4);
             l.Add(energy4);
             r = new Recipe(energy4);
             r.AddComponent(herbs[4], 24);
             r.AddComponent(GoatsMilk, 6);
 
-            var energy6 = new Item("Major Energy Potion", 7);
+            var energy6 = new Item("Major Energy Potion", 6);
             l.Add(energy6);
             r = new Recipe(energy6);
             r.AddComponent(herbs[6], 72);
@@ -682,13 +682,13 @@ namespace AlbionRecipeJson
             r = new Recipe(healing2);
             r.AddComponent(herbs[2], 8);
 
-            var healing4 = new Item("Healing Potion", 5);
+            var healing4 = new Item("Healing Potion", 6);
             l.Add(healing4);
             r = new Recipe(healing4);
             r.AddComponent(herbs[4], 24);
             r.AddComponent(HenEgg, 6);
 
-            var healing6 = new Item("Major Healing Potion", 7);
+            var healing6 = new Item("Major Healing Potion", 6);
             l.Add(healing6);
             r = new Recipe(healing6);
             r.AddComponent(herbs[6], 72);

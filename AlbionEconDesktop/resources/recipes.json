@@ -39982,10 +39982,15 @@
   {
     "$id": "1842",
     "Name": "Journeyman's Horse",
+    "Tier": 3
+  },
+  {
+    "$id": "1843",
+    "Name": "Journeyman's Riding Horse",
     "Tier": 3,
     "Recipe": {
       "CreatedItem": {
-        "$ref": "1842"
+        "$ref": "1843"
       },
       "Components": [
         {
@@ -40002,11 +40007,6 @@
         }
       ]
     }
-  },
-  {
-    "$id": "1843",
-    "Name": "Journeyman's Riding Horse",
-    "Tier": 3
   },
   {
     "$id": "1844",
@@ -40070,10 +40070,15 @@
   {
     "$id": "1847",
     "Name": "Adept's Horse",
+    "Tier": 4
+  },
+  {
+    "$id": "1848",
+    "Name": "Adept's Riding Horse",
     "Tier": 4,
     "Recipe": {
       "CreatedItem": {
-        "$ref": "1847"
+        "$ref": "1848"
       },
       "Components": [
         {
@@ -40090,11 +40095,6 @@
         }
       ]
     }
-  },
-  {
-    "$id": "1848",
-    "Name": "Adept's Riding Horse",
-    "Tier": 4
   },
   {
     "$id": "1849",
@@ -40158,10 +40158,15 @@
   {
     "$id": "1852",
     "Name": "Expert's Horse",
+    "Tier": 5
+  },
+  {
+    "$id": "1853",
+    "Name": "Expert's Riding Horse",
     "Tier": 5,
     "Recipe": {
       "CreatedItem": {
-        "$ref": "1852"
+        "$ref": "1853"
       },
       "Components": [
         {
@@ -40178,11 +40183,6 @@
         }
       ]
     }
-  },
-  {
-    "$id": "1853",
-    "Name": "Expert's Riding Horse",
-    "Tier": 5
   },
   {
     "$id": "1854",
@@ -40246,10 +40246,15 @@
   {
     "$id": "1857",
     "Name": "Master's Horse",
+    "Tier": 6
+  },
+  {
+    "$id": "1858",
+    "Name": "Master's Riding Horse",
     "Tier": 6,
     "Recipe": {
       "CreatedItem": {
-        "$ref": "1857"
+        "$ref": "1858"
       },
       "Components": [
         {
@@ -40266,11 +40271,6 @@
         }
       ]
     }
-  },
-  {
-    "$id": "1858",
-    "Name": "Master's Riding Horse",
-    "Tier": 6
   },
   {
     "$id": "1859",
@@ -40334,10 +40334,15 @@
   {
     "$id": "1862",
     "Name": "Grandmaster's Horse",
+    "Tier": 7
+  },
+  {
+    "$id": "1863",
+    "Name": "Grandmaster's Riding Horse",
     "Tier": 7,
     "Recipe": {
       "CreatedItem": {
-        "$ref": "1862"
+        "$ref": "1863"
       },
       "Components": [
         {
@@ -40354,11 +40359,6 @@
         }
       ]
     }
-  },
-  {
-    "$id": "1863",
-    "Name": "Grandmaster's Riding Horse",
-    "Tier": 7
   },
   {
     "$id": "1864",
@@ -40422,10 +40422,15 @@
   {
     "$id": "1867",
     "Name": "Elder's Horse",
+    "Tier": 8
+  },
+  {
+    "$id": "1868",
+    "Name": "Elder's Riding Horse",
     "Tier": 8,
     "Recipe": {
       "CreatedItem": {
-        "$ref": "1867"
+        "$ref": "1868"
       },
       "Components": [
         {
@@ -40442,11 +40447,6 @@
         }
       ]
     }
-  },
-  {
-    "$id": "1868",
-    "Name": "Elder's Riding Horse",
-    "Tier": 8
   },
   {
     "$id": "1869",
@@ -41025,7 +41025,7 @@
   {
     "$id": "1896",
     "Name": "Energy Potion",
-    "Tier": 5,
+    "Tier": 4,
     "Recipe": {
       "CreatedItem": {
         "$ref": "1896"
@@ -41049,7 +41049,7 @@
   {
     "$id": "1897",
     "Name": "Major Energy Potion",
-    "Tier": 7,
+    "Tier": 6,
     "Recipe": {
       "CreatedItem": {
         "$ref": "1897"
@@ -41097,7 +41097,7 @@
   {
     "$id": "1899",
     "Name": "Healing Potion",
-    "Tier": 5,
+    "Tier": 6,
     "Recipe": {
       "CreatedItem": {
         "$ref": "1899"
@@ -41121,7 +41121,7 @@
   {
     "$id": "1900",
     "Name": "Major Healing Potion",
-    "Tier": 7,
+    "Tier": 6,
     "Recipe": {
       "CreatedItem": {
         "$ref": "1900"
