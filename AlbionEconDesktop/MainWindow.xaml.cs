@@ -93,6 +93,8 @@ namespace AlbionEconDesktop
             PriceUpdateController.AddPrice(WindowContext.PriceUpdateQueue[0], v);
             PriceUpdateTextBox.SelectAll();
             UpdateItemList();
+            if (WindowContext.PriceUpdateQueue.Count > 0)
+                Clipboard.SetText(WindowContext.PriceUpdateQueue[0].Name);
         }
         #endregion
     }
