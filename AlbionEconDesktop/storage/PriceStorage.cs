@@ -12,7 +12,7 @@ namespace AlbionEconDesktop.storage
         {
             if (!File.Exists(FilePath))
             {
-                File.Create(FilePath);
+                File.Create(FilePath).Close();
             }
             using (StreamWriter sw = File.AppendText(FilePath))
             {
