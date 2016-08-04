@@ -68,7 +68,7 @@ namespace AlbionEconDesktop
         }
         private void AddToUpdateQueueButton_Clicked(object sender, RoutedEventArgs e)
         {
-            PriceUpdateController.AddToQueue(ItemListView.ItemsSource as System.Collections.Generic.IEnumerable<Item>, (bool) AddRecursiveCheckbox.IsChecked);
+            PriceUpdateController.AddToQueue(ItemListView.ItemsSource as System.Collections.Generic.IEnumerable<Item>, (bool) AddMaterialsCheckbox.IsChecked, (bool) AddRecursiveCheckbox.IsChecked);
         }
 
         #region UpdateQueue

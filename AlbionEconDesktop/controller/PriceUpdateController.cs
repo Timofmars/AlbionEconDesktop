@@ -24,15 +24,15 @@ namespace AlbionEconDesktop.controller
             get { return _queue; }
         }
 
-        public static void AddToQueue(System.Collections.Generic.IEnumerable<Item> itemList, bool recursive)
+        public static void AddToQueue(System.Collections.Generic.IEnumerable<Item> itemList, bool addmaterials, bool recursive)
         {
-            if (recursive)
+            if (addmaterials)
             {
                 foreach (var item in itemList)
                 {
                     if (item.Recipe != null)
                     {
-                        AddToQueue(item.Recipe.Components.Select(i => i.Item), true);
+                        AddToQueue(item.Recipe.Components.Select(i => i.Item), recursive, recursive);
                     }
                 }
             }
