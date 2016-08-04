@@ -59,9 +59,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="controller\FavoriteController.cs" />
     <Compile Include="controller\PriceUpdateController.cs" />
     <Compile Include="lib\Settings.cs" />
     <Compile Include="model\ItemClass.cs" />
+    <Compile Include="storage\FavoriteStorage.cs" />
     <Compile Include="storage\JsonHandler.cs" />
     <Compile Include="storage\PriceStorage.cs" />
     <Compile Include="view\ProfitToColorConverter.cs" />

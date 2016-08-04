@@ -19,6 +19,7 @@ namespace AlbionEconDesktop.model
         public int Tier { get; set; }
         public int Rarity { get; set; } = 1;
         public ItemClass Class { get; set; }
+        public bool IsFavorite { get; set; } = false;
 
         public List<Price> _prices = new List<Price>();
         public List<Price> PriceHistory { get { return _prices; } }

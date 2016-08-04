@@ -16,15 +16,20 @@ namespace AlbionEconDesktop
     /// </summary>
     class WindowContext : INotifyPropertyChanged
     {
+        public static MainWindow Window { get; set; }
         private static string _filter = "";
         public string ItemListFilter {
             get { return _filter; }
             set { _filter = value; NotifyPropertyChanged("Items"); }
         }
-        public static bool FilterUnprofitable { get; set; }
         public static ObservableCollection<Item> PriceUpdateQueue { get { return PriceUpdateController.Queue; } }
         public static ObservableCollection<Item> Items { get {
-                return new ObservableCollection<Item>(Item.All.Where(i => i.Name.ToLower().Contains(_filter) && (!FilterUnprofitable || i.Profit > 0)));
+                return new ObservableCollection<Item>(
+                    Item.All.Where(i => i.Name.ToLower().Contains(_filter) 
+                    && (!(bool) Window.ItemListFilterUnprofitCheckBox.IsChecked || i.Profit > 0)
+                    && (i.IsFavorite || !(bool) Window.ItemListFilterShowFavoritesCheckBox.IsChecked)
+                    && (i.Recipe != null))
+                    );
             }
         }
         private static Item _price;
@@ -44,8 +49,10 @@ namespace AlbionEconDesktop
         private WindowContext _context;
         public MainWindow()
         {
+            WindowContext.Window = this;
             JsonHandler.DeserializeRecipes();
             PriceStorage.LoadAll();
+            FavoriteStorage.LoadAll();
             InitializeComponent();
             _context = DataContext as WindowContext;
         }
@@ -62,9 +69,16 @@ namespace AlbionEconDesktop
             _context.ItemListFilter = (sender as TextBox).Text.ToLower();
             UpdateItemList();
         }
-        private void ItemListFilterUnprofitCheckBox_CheckedChanged(object sender, RoutedEventArgs e)
+        private void ItemListFilterCheckBox_CheckedChanged(object sender, RoutedEventArgs e)
         {
             UpdateItemList();
+        }
+        private void ItemlistMenu_clicked(object sender, RoutedEventArgs e)
+        {
+            var item = ItemListView.SelectedItem as Item;
+            if (sender == MenuItemAddFavorite) FavoriteController.AddFavorite(item);
+            else if (sender == MenuItemRemFavorite) FavoriteController.RemoveFavorite(item);
+            
         }
         private void AddToUpdateQueueButton_Clicked(object sender, RoutedEventArgs e)
         {

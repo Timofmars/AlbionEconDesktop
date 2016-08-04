@@ -24,26 +24,36 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <TextBlock Text="Filter: " Grid.Column="0" Grid.Row="0" />
-                <CheckBox x:Name="ItemListFilterUnprofitCheckBox" Content="Hide unprofitable" IsChecked="{Binding FilterUnprofitable}" Grid.Column="2" Grid.Row="1" Checked="ItemListFilterUnprofitCheckBox_CheckedChanged" Unchecked="ItemListFilterUnprofitCheckBox_CheckedChanged"/>
-                <CheckBox Content="Hide raw materials" IsChecked="True" IsEnabled="False" Grid.Column="2" Grid.Row="2" />
-                <TextBox Grid.Column="1" Grid.Row="0" TextChanged="ItemFilterBox_TextChanged"/>
-                <ListView ItemTemplate="{StaticResource ItemListTemplate}"  x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch" Grid.Row="3" Grid.ColumnSpan="2" />
+                <StackPanel  Grid.Column="1" Grid.Row="0">
+                    <TextBox TextChanged="ItemFilterBox_TextChanged"/>
+                    <CheckBox x:Name="ItemListFilterUnprofitCheckBox" Content="Hide unprofitable" Checked="ItemListFilterCheckBox_CheckedChanged" Unchecked="ItemListFilterCheckBox_CheckedChanged"/>
+                    <CheckBox x:Name="ItemListFilterShowFavoritesCheckBox" Content="Only show favorites" Checked="ItemListFilterCheckBox_CheckedChanged" Unchecked="ItemListFilterCheckBox_CheckedChanged" />
+                    <CheckBox Content="Hide raw materials" IsChecked="True" IsEnabled="False" />
+                </StackPanel>
+                <ListView ItemTemplate="{StaticResource ItemListTemplate}"  x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch" Grid.Row="3" Grid.ColumnSpan="2">
+                    <ListView.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="Add to favorites" x:Name="MenuItemAddFavorite" Click="ItemlistMenu_clicked"/>
+                            <MenuItem Header="Remove from favorites" x:Name="MenuItemRemFavorite" Click="ItemlistMenu_clicked"/>
+                        </ContextMenu>
+                    </ListView.ContextMenu>
+                </ListView>
                 <Button Content="Add shown to UpdateQueue" Grid.Column="0" Grid.Row="4" Click="AddToUpdateQueueButton_Clicked" Height="20" VerticalAlignment="Bottom"/>
                 <StackPanel Grid.Column="1" Grid.Row="4">
                     <CheckBox x:Name="AddMaterialsCheckbox" Content="Add materials" VerticalAlignment="Center"/>
                     <CheckBox x:Name="AddRecursiveCheckbox" Content="Recursively" VerticalAlignment="Center" >
-                    <CheckBox.Style>
-                        <Style TargetType="CheckBox">
-                            <Setter Property="IsEnabled" Value="True"></Setter>
-                            <Setter Property="IsChecked" Value="False"></Setter>
-                            <Style.Triggers>
+                        <CheckBox.Style>
+                            <Style TargetType="CheckBox">
+                                <Setter Property="IsEnabled" Value="True"></Setter>
+                                <Setter Property="IsChecked" Value="False"></Setter>
+                                <Style.Triggers>
                                     <DataTrigger Binding="{Binding IsChecked,ElementName=AddMaterialsCheckbox}" Value="False">
                                         <Setter Property="IsEnabled" Value="False"/>
                                         <Setter Property="IsChecked" Value="False"/>
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </CheckBox.Style>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </CheckBox.Style>
                     </CheckBox>
                 </StackPanel>
             </Grid>
