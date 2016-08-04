@@ -14,9 +14,9 @@ namespace AlbionEconDesktop.controller
             {
                 var p = new Price(value, DateTime.Now);
                 item.AddPrice(p);
-                Queue.Remove(item);
                 PriceStorage.Save(p);
-            }            
+            }
+            Queue.Remove(item);
         }
         private static ObservableCollection<Item> _queue = new ObservableCollection<Item>();
         public static ObservableCollection<Item> Queue
