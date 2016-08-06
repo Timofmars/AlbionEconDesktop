@@ -24,12 +24,15 @@ namespace AlbionEconDesktop
         }
         public static ObservableCollection<Item> PriceUpdateQueue { get { return PriceUpdateController.Queue; } }
         public static ObservableCollection<Item> Items { get {
-                return new ObservableCollection<Item>(
-                    Item.All.Where(i => i.Name.ToLower().Contains(_filter) 
+                return new ObservableCollection<Item>(Item.All.Where(
+                        i => i.Name.ToLower().Contains(_filter) 
                     && (!(bool) Window.ItemListFilterUnprofitCheckBox.IsChecked || i.Profit > 0)
                     && (i.IsFavorite || !(bool) Window.ItemListFilterShowFavoritesCheckBox.IsChecked)
-                    && (i.Recipe != null))
-                    );
+                    && (i.Recipe != null)
+                    // TODO: Make this into filters aswell
+                    && (i.Rarity != 3)
+                    && (i.Rarity != 4)
+                    ));
             }
         }
         private static Item _price;
