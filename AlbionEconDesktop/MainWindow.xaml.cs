@@ -81,7 +81,7 @@ namespace AlbionEconDesktop
             var item = ItemListView.SelectedItem as Item;
             if (sender == MenuItemAddFavorite) FavoriteController.AddFavorite(item);
             else if (sender == MenuItemRemFavorite) FavoriteController.RemoveFavorite(item);
-            
+            UpdateItemList();
         }
         private void AddToUpdateQueueButton_Clicked(object sender, RoutedEventArgs e)
         {
