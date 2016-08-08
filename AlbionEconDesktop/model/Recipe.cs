@@ -5,12 +5,6 @@ namespace AlbionEconDesktop.model
 {
     public class Recipe
     {
-        public class Component
-        {
-            public Item Item;
-            public int Count;
-        }
-        
         public Item CreatedItem;
 
         public List<Component> Components;

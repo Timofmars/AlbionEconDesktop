@@ -35,6 +35,14 @@
                         <ContextMenu>
                             <MenuItem Header="Add to favorites" x:Name="MenuItemAddFavorite" Click="ItemlistMenu_clicked"/>
                             <MenuItem Header="Remove from favorites" x:Name="MenuItemRemFavorite" Click="ItemlistMenu_clicked"/>
+                            <Separator />
+                            <MenuItem x:Name="MenuItemCraft1" Header="Add 1 to craftlist" Click="ItemlistMenu_clicked"/>
+                            <MenuItem x:Name="MenuItemCraft2" Header="Add 2 to craftlist" Click="ItemlistMenu_clicked"/>
+                            <MenuItem x:Name="MenuItemCraft3" Header="Add 3 to craftlist" Click="ItemlistMenu_clicked"/>
+                            <MenuItem x:Name="MenuItemCraft5" Header="Add 5 to craftlist" Click="ItemlistMenu_clicked"/>
+                            <MenuItem x:Name="MenuItemCraft10" Header="Add 10 to craftlist" Click="ItemlistMenu_clicked"/>
+                            <MenuItem x:Name="MenuItemCraft20" Header="Add 20 to craftlist" Click="ItemlistMenu_clicked"/>
+                            <MenuItem x:Name="MenuItemCraft40" Header="Add 40 to craftlist" Click="ItemlistMenu_clicked"/>
                         </ContextMenu>
                     </ListView.ContextMenu>
                 </ListView>
@@ -97,6 +105,15 @@
                 <Button Content="Save" Grid.Column="2" Grid.Row="1" ToolTip="Hint: Pressing enter with price box active has the same effect." />
                 <ListView ItemTemplate="{StaticResource ItemListTemplate}" ItemsSource="{Binding PriceUpdateQueue}" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" HorizontalContentAlignment="Stretch" />
             </Grid>
+        </TabItem>
+        <TabItem Header="Craftlist">
+            <ListView x:Name="Craftlist">
+                <ListView.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Remove from list" x:Name="CraftListMenuRemove" Click="CraftListMenu_Clicked"/>
+                    </ContextMenu>
+                </ListView.ContextMenu>
+            </ListView>
         </TabItem>
     </TabControl>
 </Window>

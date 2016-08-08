@@ -81,6 +81,15 @@ namespace AlbionEconDesktop
             var item = ItemListView.SelectedItem as Item;
             if (sender == MenuItemAddFavorite) FavoriteController.AddFavorite(item);
             else if (sender == MenuItemRemFavorite) FavoriteController.RemoveFavorite(item);
+            else if (sender == MenuItemCraft1) CraftlistController.AddItemToList(item, 1);
+            else if (sender == MenuItemCraft2) CraftlistController.AddItemToList(item, 2);
+            else if (sender == MenuItemCraft3) CraftlistController.AddItemToList(item, 3);
+            else if (sender == MenuItemCraft5) CraftlistController.AddItemToList(item, 5);
+            else if (sender == MenuItemCraft10) CraftlistController.AddItemToList(item, 10);
+            else if (sender == MenuItemCraft20) CraftlistController.AddItemToList(item, 20);
+            else if (sender == MenuItemCraft40) CraftlistController.AddItemToList(item, 40);
+
+            UpdateCraftList();
             if ((bool) ItemListFilterShowFavoritesCheckBox.IsChecked) UpdateItemList();
         }
         private void AddToUpdateQueueButton_Clicked(object sender, RoutedEventArgs e)
@@ -112,6 +121,18 @@ namespace AlbionEconDesktop
             UpdateItemList();
             if (WindowContext.PriceUpdateQueue.Count > 0)
                 Clipboard.SetText(WindowContext.PriceUpdateQueue[0].Name);
+        }
+        #endregion
+        #region craft and shoppinglist
+        private void CraftListMenu_Clicked(object sender, RoutedEventArgs e)
+        {
+            var component = Craftlist.SelectedItem as model.Component;
+            CraftlistController.RemoveComponentFromList(component);
+        }
+        private void UpdateCraftList()
+        {
+            Craftlist.ItemsSource = null;
+            Craftlist.ItemsSource = CraftlistController.Craftlist;
         }
         #endregion
     }
