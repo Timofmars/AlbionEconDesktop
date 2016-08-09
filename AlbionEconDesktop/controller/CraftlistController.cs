@@ -20,10 +20,12 @@ namespace AlbionEconDesktop.controller
                 Craftlist.Add(new Component(item, count));
             }
             comp.Count += count;
+            ShoppinglistController.UpdateShoppinglist(Craftlist);
         }
         public static void RemoveComponentFromList(Component component)
         {
             _craftlist.Remove(component);
+            ShoppinglistController.UpdateShoppinglist(Craftlist);
         }
 
         private static Component findCompnentWithItem(Item item)

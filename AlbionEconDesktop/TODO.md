@@ -1,3 +1,2 @@
 ﻿### TODO
-* Add craftlist
-* Add Shoppinglist
+* Add skill

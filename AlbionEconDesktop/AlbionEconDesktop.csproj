@@ -62,6 +62,7 @@
     <Compile Include="controller\CraftlistController.cs" />
     <Compile Include="controller\FavoriteController.cs" />
     <Compile Include="controller\PriceUpdateController.cs" />
+    <Compile Include="controller\ShoppinglistController.cs" />
     <Compile Include="lib\Settings.cs" />
     <Compile Include="model\Component.cs" />
     <Compile Include="model\ItemClass.cs" />

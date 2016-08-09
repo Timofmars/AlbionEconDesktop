@@ -115,5 +115,8 @@
                 </ListView.ContextMenu>
             </ListView>
         </TabItem>
+        <TabItem Header="Shoppinglist">
+            <ListView x:Name="Shoppinglist" />
+        </TabItem>
     </TabControl>
 </Window>

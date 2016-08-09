@@ -133,6 +133,8 @@ namespace AlbionEconDesktop
         {
             Craftlist.ItemsSource = null;
             Craftlist.ItemsSource = CraftlistController.Craftlist;
+            Shoppinglist.ItemsSource = null;
+            Shoppinglist.ItemsSource = ShoppinglistController.Shoppinglist;
         }
         #endregion
     }
