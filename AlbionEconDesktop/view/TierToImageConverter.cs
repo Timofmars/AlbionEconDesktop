@@ -10,7 +10,8 @@ namespace AlbionEconDesktop.view
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return string.Format("resources/images/T{0}_background.png", (int)value);
+            if ((int)value != 1) return string.Format("resources/images/T{0}_background.png", (int)value);
+            else return null;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

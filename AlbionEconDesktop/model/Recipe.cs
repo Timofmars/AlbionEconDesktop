@@ -32,6 +32,32 @@ namespace AlbionEconDesktop.model
                 return d;
             }
         }
+        public DateTime NewestPrice
+        {
+            get
+            {
+                DateTime d = Components[0].Item.PriceDate;
+                foreach (var c in Components)
+                {
+                    if (c.Item.PriceDate > d) d = c.Item.PriceDate;
+                }
+                return d;
+            }
+        }
+        private static int[] baseValue = { 0, 0, 0, 30, 70, 150, 309, 0, 0 };
+        public int ReturnsPayOfBelowTaxof
+        {
+            get
+            {
+                int tax = 1;
+                foreach (var c in Components)
+                {
+                    tax += c.Count * baseValue[c.Item.Tier];
+                }
+                if (tax == 0) return 1000;
+                return CraftCost * 15 / tax;
+            }
+        }
         public override string ToString()
         {
             var str = "(";

@@ -46,6 +46,10 @@
                     <TextBlock Text="{Binding Profit}" Foreground="{Binding Profit, Mode=OneWay, Converter={StaticResource profitConverter}}"/>
                     <TextBlock Text=")"/>
                 </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right">
+                    <TextBlock Text="Tax profitable below: " />
+                    <TextBlock Text="{Binding Recipe.ReturnsPayOfBelowTaxof}" />
+                </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right">
                     <TextBlock Text="Price Date: " />
                     <TextBlock Text="{Binding PriceDate}" />
