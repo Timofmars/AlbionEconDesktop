@@ -35,7 +35,7 @@ namespace AlbionEconDesktop.model
             get
             {
                 if (Recipe == null) return 0;
-                return Price - Recipe.CraftCost;
+                return (int) (Price * 0.97 - Recipe.CraftCost);
             }
         }
         public void AddPrice(Price price)
