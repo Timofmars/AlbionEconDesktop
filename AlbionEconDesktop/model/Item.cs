@@ -61,7 +61,6 @@ namespace AlbionEconDesktop.model
         [System.Runtime.Serialization.OnDeserialized]
         internal void OnDeserializedMethod(System.Runtime.Serialization.StreamingContext context)
         {
-            
             _items.Add(this);
         }
 
