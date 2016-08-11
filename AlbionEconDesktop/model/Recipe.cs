@@ -6,7 +6,7 @@ namespace AlbionEconDesktop.model
     public class Recipe
     {
         public Item CreatedItem;
-
+        public int CreatedCount = 1;
         public List<Component> Components;
 
         public int CraftCost
@@ -17,7 +17,7 @@ namespace AlbionEconDesktop.model
                 foreach (var comp in Components) {
                     c += comp.Item.Price * comp.Count;
                 }
-                return c;
+                return c / CreatedCount;
             }
         }
         public DateTime OldestPrice
