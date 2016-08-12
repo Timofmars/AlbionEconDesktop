@@ -184,11 +184,11 @@ namespace AlbionRecipeJson
 
             CreateGroup("Greataxe", 4, bar16leather8);
             CreateGroup("Halbard", 4, bar16leather8);
-            CreateGroup("Battleaxe", 4, bar16leather8);
+            CreateGroup("Battleaxe", 3, bar16leather8);
 
             CreateGroup("Flail", 4, bar20cloth12);
             CreateGroup("Battleaxe", 4, bar20cloth12);
-            CreateGroup("Mace", 4, bar16cloth8);
+            CreateGroup("Mace", 3, bar16cloth8);
 
             CreateGroup("Great Hammer", 4, bar20cloth12);
             CreateGroup("Polehammer", 4, bar20cloth12);
@@ -234,32 +234,32 @@ namespace AlbionRecipeJson
             CreateGroup("Iron-Clad Staff", 4, leather20bar12);
             CreateGroup("Quarterstaff", 4, leather20bar12);
 
-            CreateGroup("Torch", 4, cloth4plank4);
+            CreateGroup("Torch", 3, cloth4plank4);
             #endregion
             #region Mage
-            CreateGroup("Scholar Sandals", 4, cloth8);
+            CreateGroup("Scholar Sandals", 2, cloth8);
             CreateGroup("Cleric Sandals", 4, cloth8);
             CreateGroup("Mage Sandals", 4, cloth8);
 
-            CreateGroup("Scholar Robe", 4, cloth16);
+            CreateGroup("Scholar Robe", 2, cloth16);
             CreateGroup("Cleric Robe", 4, cloth16);
             CreateGroup("Mage Robe", 4, cloth16);
 
-            CreateGroup("Scholar Cowl", 4, cloth8);
+            CreateGroup("Scholar Cowl", 2, cloth8);
             CreateGroup("Cleric Cowl", 4, cloth8);
             CreateGroup("Mage Cowl", 4, cloth8);
 
             CreateGroup("Great Fire Staff", 4, plank20bar12);
             CreateGroup("Infernal Staff", 4, plank20bar12);
-            CreateGroup("Fire Staff", 4, plank16bar8);
+            CreateGroup("Fire Staff", 2, plank16bar8);
 
             CreateGroup("Divine Staff", 4, plank20cloth12);
             CreateGroup("Great Holy Staff", 4, plank20cloth12);
-            CreateGroup("Holy Staff", 4, plank16cloth8);
+            CreateGroup("Holy Staff", 3, plank16cloth8);
 
             CreateGroup("Great Arcane Staff", 4, plank20bar12);
             CreateGroup("Enigmatic Staff", 4, plank20bar12);
-            CreateGroup("Arcane Staff", 4, plank16bar8);
+            CreateGroup("Arcane Staff", 3, plank16bar8);
 
             CreateGroup("Great Frost Staff", 4, plank20bar12);
             CreateGroup("Glacial Staff", 4, plank20bar12);
@@ -269,7 +269,7 @@ namespace AlbionRecipeJson
             CreateGroup("Demonic Staff", 4, plank20bar12);
             CreateGroup("Cursed Staff", 4, plank16bar8);
 
-            CreateGroup("Tome of Spells", 4, cloth4leather4);
+            CreateGroup("Tome of Spells", 2, cloth4leather4);
             #endregion
 
             #region Toolsmith
@@ -281,7 +281,7 @@ namespace AlbionRecipeJson
             CreateGroup("Pickaxe", 2, plank6bar2, false);
             CreateGroup("Skinning Knife", 2, plank6bar2, false);
             CreateGroup("Sickle", 2, plank6bar2, false);
-            CreateGroup("Demolition Hammer", 3, plank8block8, false);
+            CreateGroup("Demolition Hammer", 2, plank8block8, false);
             #endregion Toolsmith
         }
         private static void FarmingRecipes()
@@ -545,23 +545,23 @@ namespace AlbionRecipeJson
             #region bootlegger
             var PotatoSchnapps = new Item("Potato Schnapps", 6);
             l.Add(PotatoSchnapps);
-            r = new Recipe(PotatoSchnapps);
+            r = new Recipe(PotatoSchnapps, 5);
             r.AddComponent(Potatoes, 1);
 
             var CornHooch = new Item("Corn Hooch", 7);
             l.Add(CornHooch);
-            r = new Recipe(CornHooch);
+            r = new Recipe(CornHooch, 5);
             r.AddComponent(BundleofCorn, 1);
 
             var PumpkinMoonshine = new Item("Pumpkin Moonshine", 8);
             l.Add(PumpkinMoonshine);
-            r = new Recipe(PumpkinMoonshine);
+            r = new Recipe(PumpkinMoonshine, 5);
             r.AddComponent(Pumpkin, 1);
             #endregion
             #region cleanse
             var cleansepot = new Item("Cleansing Potion", 8);
             l.Add(cleansepot);
-            r = new Recipe(cleansepot);
+            r = new Recipe(cleansepot, 5);
             r.AddComponent(herbs[8], 72);
             r.AddComponent(herbs[7], 36);
             r.AddComponent(herbs[6], 36);
@@ -571,13 +571,13 @@ namespace AlbionRecipeJson
             #region cooldown
             var cdr4 = new Item("Minor Recovery Potion", 4);
             l.Add(cdr4);
-            r = new Recipe(cdr4);
+            r = new Recipe(cdr4, 5);
             r.AddComponent(herbs[4], 8);
             r.AddComponent(herbs[3], 4);
 
             var cdr6 = new Item("Recovery Potion", 6);
             l.Add(cdr6);
-            r = new Recipe(cdr6);
+            r = new Recipe(cdr6, 5);
             r.AddComponent(herbs[6], 24);
             r.AddComponent(herbs[5], 12);
             r.AddComponent(herbs[3], 12);
@@ -585,7 +585,7 @@ namespace AlbionRecipeJson
 
             var cdr8 = new Item("Major Recovery Potion", 8);
             l.Add(cdr8);
-            r = new Recipe(cdr8);
+            r = new Recipe(cdr8, 5);
             r.AddComponent(herbs[8], 72);
             r.AddComponent(herbs[7], 24);
             r.AddComponent(herbs[5], 24);
@@ -595,19 +595,19 @@ namespace AlbionRecipeJson
             #region slowfield
             var chill3 = new Item("Minor Chilling Flask", 3);
             l.Add(chill3);
-            r = new Recipe(chill3);
+            r = new Recipe(chill3, 5);
             r.AddComponent(herbs[3], 8);
 
             var chill5 = new Item("Chilling Flask", 5);
             l.Add(chill5);
-            r = new Recipe(chill5);
+            r = new Recipe(chill5, 5);
             r.AddComponent(herbs[5], 24);
             r.AddComponent(herbs[4], 12);
             r.AddComponent(GooseEggs, 6);
 
             var chill7 = new Item("Major Chilling Flask", 7);
             l.Add(chill7);
-            r = new Recipe(chill7);
+            r = new Recipe(chill7, 5);
             r.AddComponent(herbs[7], 72);
             r.AddComponent(herbs[6], 36);
             r.AddComponent(herbs[4], 36);
@@ -617,19 +617,19 @@ namespace AlbionRecipeJson
             #region resistance
             var res3 = new Item("Minor Resistance Potion", 3);
             l.Add(res3);
-            r = new Recipe(res3);
+            r = new Recipe(res3, 5);
             r.AddComponent(herbs[3], 8);
 
             var res5 = new Item("Chilling Flask", 5);
             l.Add(res5);
-            r = new Recipe(res5);
+            r = new Recipe(res5, 5);
             r.AddComponent(herbs[5], 24);
             r.AddComponent(herbs[4], 12);
             r.AddComponent(GoatsMilk, 6);
 
             var res7 = new Item("Major Chilling Flask", 7);
             l.Add(res7);
-            r = new Recipe(res7);
+            r = new Recipe(res7, 5);
             r.AddComponent(herbs[7], 72);
             r.AddComponent(herbs[6], 36);
             r.AddComponent(herbs[4], 36);
@@ -639,19 +639,19 @@ namespace AlbionRecipeJson
             #region revival
             var revive3 = new Item("Minor Revive Flask", 3);
             l.Add(revive3);
-            r = new Recipe(revive3);
+            r = new Recipe(revive3, 5);
             r.AddComponent(herbs[3], 8);
 
             var revive5 = new Item("Revive Flask", 5);
             l.Add(revive5);
-            r = new Recipe(revive5);
+            r = new Recipe(revive5, 5);
             r.AddComponent(herbs[5], 24);
             r.AddComponent(herbs[4], 12);
             r.AddComponent(GooseEggs, 6);
 
             var revive7 = new Item("Major Revive Flask", 7);
             l.Add(revive7);
-            r = new Recipe(revive7);
+            r = new Recipe(revive7, 5);
             r.AddComponent(herbs[7], 71);
             r.AddComponent(herbs[6], 36);
             r.AddComponent(GooseEggs, 18);
@@ -660,18 +660,18 @@ namespace AlbionRecipeJson
             #region energy
             var energy2 = new Item("Minor Energy Potion", 2);
             l.Add(energy2);
-            r = new Recipe(energy2);
+            r = new Recipe(energy2, 5);
             r.AddComponent(herbs[2], 8);
 
             var energy4 = new Item("Energy Potion", 4);
             l.Add(energy4);
-            r = new Recipe(energy4);
+            r = new Recipe(energy4, 5);
             r.AddComponent(herbs[4], 24);
             r.AddComponent(GoatsMilk, 6);
 
             var energy6 = new Item("Major Energy Potion", 6);
             l.Add(energy6);
-            r = new Recipe(energy6);
+            r = new Recipe(energy6, 5);
             r.AddComponent(herbs[6], 72);
             r.AddComponent(SheepsMilk, 18);
             r.AddComponent(PotatoSchnapps, 18);
@@ -679,18 +679,18 @@ namespace AlbionRecipeJson
             #region healing
             var healing2 = new Item("Minor Healing Potion", 2);
             l.Add(healing2);
-            r = new Recipe(healing2);
+            r = new Recipe(healing2, 5);
             r.AddComponent(herbs[2], 8);
 
             var healing4 = new Item("Healing Potion", 6);
             l.Add(healing4);
-            r = new Recipe(healing4);
+            r = new Recipe(healing4, 5);
             r.AddComponent(herbs[4], 24);
             r.AddComponent(HenEgg, 6);
 
             var healing6 = new Item("Major Healing Potion", 6);
             l.Add(healing6);
-            r = new Recipe(healing6);
+            r = new Recipe(healing6, 5);
             r.AddComponent(herbs[6], 72);
             r.AddComponent(GooseEggs, 18);
             r.AddComponent(PotatoSchnapps, 18);
@@ -723,7 +723,7 @@ namespace AlbionRecipeJson
         }
         private static void WriteStringToFile(string str)
         {
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\cygwin64\home\krissam\src\recipes.json"))
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\Users\krissam\AppData\Roaming\krss\albionecon\recipes.json"))
             {
                 file.WriteLine(str);
             }
