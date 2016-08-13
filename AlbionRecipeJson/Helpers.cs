@@ -30,7 +30,7 @@ namespace AlbionRecipeJson
                 if (tier == 2) itemName += "Copper";
                 else if (tier == 3) itemName += "Bronze";
                 else if (tier == 4) itemName += "Steel";
-                else if (tier == 5) itemName += "Titanium";
+                else if (tier == 5) itemName += "Titanium Steel";
                 else if (tier == 6) itemName += "Runite Steel";
                 else if (tier == 7) itemName += "Meteorite Steel";
                 else if (tier == 8) itemName += "Adamantium Steel";
