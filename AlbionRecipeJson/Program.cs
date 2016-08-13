@@ -224,7 +224,7 @@ namespace AlbionRecipeJson
 
             CreateGroup("Great Nature Staff", 4, plank20cloth12);
             CreateGroup("Wild Staff", 4, plank20cloth12);
-            CreateGroup("Nature Staff", 3, plank20cloth12);
+            CreateGroup("Nature Staff", 3, plank16cloth8);
 
             CreateGroup("Claws", 4, leather20bar12);
             CreateGroup("Dagger Pair", 4, bar16leather16);
