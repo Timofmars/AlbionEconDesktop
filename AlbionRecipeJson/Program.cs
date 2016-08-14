@@ -53,7 +53,7 @@ namespace AlbionRecipeJson
             };
             GroupRecipe bar16cloth8 = (tier, rarity, recipe) =>
             {
-                recipe.AddComponent(Helpers.GetResourceByTier(ResourceType.Plank, tier, rarity), 16);
+                recipe.AddComponent(Helpers.GetResourceByTier(ResourceType.Bar, tier, rarity), 16);
                 recipe.AddComponent(Helpers.GetResourceByTier(ResourceType.Cloth, tier, rarity), 8);
             };
             GroupRecipe bar16plank8 = (tier, rarity, recipe) =>
@@ -182,12 +182,12 @@ namespace AlbionRecipeJson
             CreateGroup("Dual Swords", 4, bar20leather12);
             CreateGroup("Broadsword", 2, bar16leather8);
 
-            CreateGroup("Greataxe", 4, bar16leather8);
-            CreateGroup("Halbard", 4, bar16leather8);
-            CreateGroup("Battleaxe", 3, bar16leather8);
+            CreateGroup("Greataxe", 4, bar20plank12);
+            CreateGroup("Halberd", 4, plank20bar12);
+            CreateGroup("Battleaxe", 3, bar16plank8);
 
             CreateGroup("Flail", 4, bar20cloth12);
-            CreateGroup("Battleaxe", 4, bar20cloth12);
+            CreateGroup("Heavy Mace", 4, bar20cloth12);
             CreateGroup("Mace", 3, bar16cloth8);
 
             CreateGroup("Great Hammer", 4, bar20cloth12);
@@ -196,7 +196,7 @@ namespace AlbionRecipeJson
 
             CreateGroup("Crossbow", 4, plank20bar12);
             CreateGroup("Heavy Crossbow", 4, plank20bar12);
-            CreateGroup("Light Crossbow", 4, plank20bar12);
+            CreateGroup("Light Crossbow", 4, plank16bar8);
 
             CreateGroup("Shield", 2, bar4plank4);
             #endregion Blacksmith
