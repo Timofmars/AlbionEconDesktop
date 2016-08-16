@@ -117,10 +117,20 @@ namespace AlbionEconDesktop
                 v = Int32.MaxValue;
             }
             PriceUpdateController.AddPrice(WindowContext.PriceUpdateQueue[0], v);
-            PriceUpdateTextBox.SelectAll();
             UpdateItemList();
+            if (WindowContext.PriceUpdateQueue.Count == 0 && (bool) ChcckAutoPriceFavorite.IsChecked)
+            {
+                var item = FavoriteController.List.OrderBy(i => i.PriceDate).FirstOrDefault();
+                if (item != null)
+                {
+                    PriceUpdateController.AddToQueue(item, (DateTime.Now - item.Recipe.OldestPrice).TotalMinutes > 90, false);
+                }
+            }
             if (WindowContext.PriceUpdateQueue.Count > 0)
+            {
                 Clipboard.SetText(WindowContext.PriceUpdateQueue[0].Name);
+                PriceUpdateTextBox.SelectAll();
+            }
         }
         #endregion
         #region craft and shoppinglist
