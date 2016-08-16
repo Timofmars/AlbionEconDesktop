@@ -23,6 +23,11 @@ namespace AlbionEconDesktop.controller
         {
             get { return _queue; }
         }
+        public static void AddInFrontofQueue(Item item)
+        {
+            if (Queue.Contains(item)) Queue.Remove(item);
+            Queue.Insert(0, item);
+        }
         public static void AddToQueue(Item item, bool addMaterials, bool recursive)
         {
             if (!Queue.Contains(item))

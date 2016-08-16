@@ -33,6 +33,8 @@
                 <ListView ItemTemplate="{StaticResource ItemListTemplate}"  x:Name="ItemListView" ItemsSource="{Binding Items}" MouseUp="Itemlist_MouseUp" HorizontalContentAlignment="Stretch" Grid.Row="3" Grid.ColumnSpan="2">
                     <ListView.ContextMenu>
                         <ContextMenu>
+                            <MenuItem Header="Set Price"  x:Name="MenuItemUpdatePrice" Click="ItemlistMenu_clicked" />
+                            <Separator />
                             <MenuItem Header="Add to favorites" x:Name="MenuItemAddFavorite" Click="ItemlistMenu_clicked"/>
                             <MenuItem Header="Remove from favorites" x:Name="MenuItemRemFavorite" Click="ItemlistMenu_clicked"/>
                             <Separator />
@@ -85,7 +87,7 @@
                 </ListView>
             </DockPanel>
         </TabItem>
-        <TabItem Header="PriceUpdate">
+        <TabItem Header="PriceUpdate" x:Name="TabItemPriceUpdate">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />

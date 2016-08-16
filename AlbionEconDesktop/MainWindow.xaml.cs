@@ -88,6 +88,11 @@ namespace AlbionEconDesktop
             else if (sender == MenuItemCraft10) CraftlistController.AddItemToList(item, 10);
             else if (sender == MenuItemCraft20) CraftlistController.AddItemToList(item, 20);
             else if (sender == MenuItemCraft40) CraftlistController.AddItemToList(item, 40);
+            else if (sender == MenuItemUpdatePrice)
+            {
+                PriceUpdateController.AddInFrontofQueue(item);
+                TabItemPriceUpdate.IsSelected = true;
+            }
 
             UpdateCraftList();
             if ((bool) ItemListFilterShowFavoritesCheckBox.IsChecked) UpdateItemList();
