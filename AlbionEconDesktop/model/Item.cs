@@ -29,7 +29,9 @@ namespace AlbionEconDesktop.model
                 return _prices[0].Value;
             }
         }
-        public DateTime PriceDate { get { return _prices.Count > 0 ? _prices[0].Timestamp : new DateTime(1970,1,1,0,0,0,0,DateTimeKind.Utc); } }
+        // Save a bit of memory by not making hundreds of datetime objects
+        private static DateTime _defaultDate = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+        public DateTime PriceDate { get { return _prices.Count > 0 ? _prices[0].Timestamp : _defaultDate; } }
         public int Profit
         {
             get
