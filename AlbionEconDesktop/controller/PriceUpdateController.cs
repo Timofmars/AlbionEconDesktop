@@ -28,6 +28,17 @@ namespace AlbionEconDesktop.controller
             if (Queue.Contains(item)) Queue.Remove(item);
             Queue.Insert(0, item);
         }
+        public static void AddQuick(Item item, int addMaterialsOlderThan)
+        {
+            AddInFrontofQueue(item);
+            foreach (var i in item.Recipe.Components.Select(i => i.Item))
+            {
+                if ((DateTime.Now - i.PriceDate).TotalMinutes > addMaterialsOlderThan)
+                {
+                    AddInFrontofQueue(i);
+                }
+            }
+        }
         public static void AddToQueue(Item item, bool addMaterials, bool recursive)
         {
             if (!Queue.Contains(item))

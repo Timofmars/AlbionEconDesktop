@@ -128,7 +128,7 @@ namespace AlbionEconDesktop
                 var item = FavoriteController.List.OrderBy(i => i.PriceDate).FirstOrDefault();
                 if (item != null)
                 {
-                    PriceUpdateController.AddToQueue(item, (DateTime.Now - item.Recipe.OldestPrice).TotalMinutes > 90, false);
+                    PriceUpdateController.AddQuick(item, 90);
                 }
             }
             if (WindowContext.PriceUpdateQueue.Count > 0)
