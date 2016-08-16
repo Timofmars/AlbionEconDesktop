@@ -25,8 +25,11 @@ namespace AlbionEconDesktop.model
         public List<Price> PriceHistory { get { return _prices; } }
         public int Price {
             get {
-                if (_prices.Count == 0) return 0;
-                return _prices[0].Value;
+                for (var i = 0; i < PriceHistory.Count; i++)
+                {
+                    if (PriceHistory[i].Value > 0) return PriceHistory[i].Value;
+                }
+                return 0;
             }
         }
         // Save a bit of memory by not making hundreds of datetime objects

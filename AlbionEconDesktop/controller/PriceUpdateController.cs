@@ -10,7 +10,7 @@ namespace AlbionEconDesktop.controller
     {
         public static void AddPrice(Item item, int value)
         {
-            if (value > 0)
+            if (value >= 0)
             {
                 var p = new Price(value, DateTime.Now);
                 item.AddPrice(p);
