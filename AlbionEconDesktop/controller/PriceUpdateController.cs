@@ -26,19 +26,13 @@ namespace AlbionEconDesktop.controller
 
         public static void AddToQueue(System.Collections.Generic.IEnumerable<Item> itemList, bool addmaterials, bool recursive)
         {
-            if (addmaterials)
-            {
-                foreach (var item in itemList)
-                {
-                    if (item.Recipe != null)
-                    {
-                        AddToQueue(item.Recipe.Components.Select(i => i.Item), recursive, recursive);
-                    }
-                }
-            }
             foreach (var item in itemList) {
                 if (!Queue.Contains(item))
                 {
+                    if (addmaterials && item.Recipe != null)
+                    {
+                        AddToQueue(item.Recipe.Components.Select(i => i.Item), recursive, recursive);
+                    }
                     Queue.Add(item);
                 }
 
