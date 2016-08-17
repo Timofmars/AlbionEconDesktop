@@ -344,6 +344,11 @@ namespace AlbionRecipeJson
             l.Add(CabbageSoup);
             #endregion
             #region Salad
+            var BeanSalad = new Item("Bean Salad", 2);
+            l.Add(BeanSalad);
+            r = new Recipe(BeanSalad, 10);
+            r.AddComponent(Carrot, 8);
+            r.AddComponent(Beans, 8);
             var Turnips = new Item("Turnips", 4);
             l.Add(Turnips);
             var TurnipSalad = new Item("Turnip Salad", 4);
