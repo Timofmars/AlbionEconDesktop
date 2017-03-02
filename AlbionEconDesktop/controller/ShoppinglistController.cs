@@ -16,11 +16,14 @@ namespace AlbionEconDesktop.controller
             _shoppinglist.Clear();
             foreach (Component listComponent in list)
             {
-                foreach (var component in listComponent.Item.Recipe.Components)
+                if (listComponent.Item.Recipe != null)
                 {
-                    var comp = findCompnentWithItem(component.Item);
-                    if (comp == null) _shoppinglist.Add(new Component(component.Item, listComponent.Count * component.Count));
-                    else comp.Count += listComponent.Count * component.Count;
+                    foreach (var component in listComponent.Item.Recipe.Components)
+                    {
+                        var comp = findCompnentWithItem(component.Item);
+                        if (comp == null) _shoppinglist.Add(new Component(component.Item, listComponent.Count * component.Count));
+                        else comp.Count += listComponent.Count * component.Count;
+                    }
                 }
             }
         }
