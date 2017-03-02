@@ -8,8 +8,11 @@ namespace AlbionRecipeJson
 {
     class Helpers
     {
+        private static List<Item> essences;
         public static Item GetResourceByTier(ResourceType resource, int tier, int rarity)
         {
+            if (rarity > 1 && (tier < 4 || resource == ResourceType.Block)) return null;
+            if (tier == 1) return null;
             var itemName = "";
             if (rarity == 2) itemName += "Uncommon ";
             if (rarity == 3) itemName += "Rare ";
@@ -76,14 +79,23 @@ namespace AlbionRecipeJson
             }
             var item = new Item(itemName, tier, rarity);
             var recipe = new Recipe(item);
-            recipe.AddComponent(GetResourceByTierRaw(resource, tier, rarity), 1);
-            if (tier > 4) recipe.AddComponent(GetResourceByTier(resource, tier - 1, rarity), 1);
+            var rawCount = 2;
+            if (tier >= 7) rawCount = 5;
+            else if (tier == 6) rawCount = 4;
+            else if (tier == 5) rawCount = 3;
+            recipe.AddComponent(GetResourceByTierRaw(resource, tier, rarity), rawCount);
+            if (rarity > 1) recipe.AddComponent(GetEssenceByTier(tier), (int) Math.Pow(2, rarity-2));
+            if (tier > 4) {
+                recipe.AddComponent(GetResourceByTier(resource, tier - 1, rarity), 1);
+            }
             else if (tier == 4 || tier == 3) recipe.AddComponent(GetResourceByTier(resource, tier - 1, 1), 1);
             Program.Items.Add(item);
             return item;
         }
         public static Item GetResourceByTierRaw(ResourceType resource, int tier, int rarity)
         {
+            if (rarity > 1 && (tier < 4 || resource == ResourceType.Block)) return null;
+            if (tier < 2) return null;
             var itemName = "";
             if (tier >= 4)
             {
@@ -155,5 +167,21 @@ namespace AlbionRecipeJson
             Program.Items.Add(item);
             return item;
         }
+        public static Item GetEssenceByTier(int tier)
+        {
+            if (essences == null)
+            {
+                essences = new List<Item>();
+                string[] TierPrefix = { "", "Beginner's", "Novice's", "Journeyman's", "Adept's", "Expert's", "Master's", "Grandmaster's", "Elder's" };
+                for (int i = 4; i <= 8; i++)
+                {
+                    var item = new Item(TierPrefix[i] + " Essence", i);
+                    Program.Items.Add(item);
+                    essences.Add(item);
+                }
+            }
+            return essences[tier - 4];
+        }
     }
 }
+ 

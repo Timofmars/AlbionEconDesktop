@@ -11,6 +11,7 @@ namespace AlbionRecipeJson
         public static List<Item> Items = new List<Item>();
         static void Main(string[] args)
         {
+            CreateRefinings();
             FillList();
             FarmingRecipes();
             var json = ListToJson(Items);
@@ -23,6 +24,29 @@ namespace AlbionRecipeJson
                 {
                     NullValueHandling = NullValueHandling.Ignore
                 });
+        }
+        private static void CreateRefinings()
+        {
+            foreach (ResourceType type in Enum.GetValues(typeof(ResourceType)))
+            {
+                for (var i = 2; i <= 8; i++)
+                {
+                    for (var j = 1; j <= 4; j++)
+                    {
+                        Helpers.GetResourceByTierRaw(type, i, j);
+                    }
+                }
+            }
+            foreach (ResourceType type in Enum.GetValues(typeof(ResourceType)))
+            {
+                for (var i = 2; i <= 8; i++)
+                {
+                    for (var j = 1; j <= 4; j++)
+                    {
+                        Helpers.GetResourceByTier(type, i, j);
+                    }
+                }
+            }
         }
         private static void FillList()
         {

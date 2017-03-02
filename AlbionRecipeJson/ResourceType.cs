@@ -8,6 +8,6 @@ namespace AlbionRecipeJson
 {
     enum ResourceType
     {
-        Block, Plank, Leather, Bar, Cloth
+        Block, Plank, Leather, Bar, Cloth, Essence
     }
 }
